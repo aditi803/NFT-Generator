@@ -1,0 +1,83 @@
+@font-face {
+  font-family: "Crushy Black";
+  src: local('Crushy Black'), url(../font-family/Crushy\ Black.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Kartooni';
+   font-weight: 900; 
+  src: local('Kartooni'), url(../font-family/Kartooni.ttf) format('truetype');
+}
+.accordion-button {
+    background-color: transparent !important;
+    padding: 0px;
+    }
+    .accordion-button:not(.collapsed) {
+      box-shadow:  none !important;
+    }
+    button:focus:not(:focus-visible) {
+      outline: none !important;
+    }
+    .accordion-button:focus {
+     border: none !important;
+      outline: none !important;
+     box-shadow: none !important;
+    }
+ .loginModal {
+      --bs-modal-padding: 0px !important;
+      --bs-modal-width: max-content !important;
+    }
+   
+    .modal.show .modal-dialog {
+    transform: none;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    }
+    .modal-content {
+      margin: 0px;
+      max-height: fit-content;
+      border-radius: 27px;
+    }
+    .modal-header{
+      border-bottom: none;
+    }
+    .modal-footer{
+      border-top: none;
+      padding: 10px 10px;
+     
+    }
+    .CreateNft {
+      --bs-modal-width: 490px !important;
+      --bs-modal-padding: 15px !important;
+    }
+    .editDataModal{
+      --bs-modal-width: 445px !important;
+    }
+    .nftGenerateModal{
+      --bs-modal-width: 480px !important;
+    }
+    /* @media (max-width: 991.98px) {
+      .modal.show .modal-dialog {
+        transform: none;
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+        }
+    }
+    @media (max-width: 767.98px) {
+      .modal.show .modal-dialog {
+        transform: none;
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+        }
+    } */
+    .customCols .col-md-2{
+      flex: 0  0 auto;
+      width: 10.666667%;
+    }
+    .customCols .col-md-3{
+      flex: 0 0 auto;
+      width: 20%;
+    }

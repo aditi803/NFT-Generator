@@ -1,0 +1,17 @@
+.editBody label{
+    color: black;
+    font-size: 15px;
+    font-weight: 500;
+}
+.editBody input{
+    margin-top: 2px;
+    margin-bottom: 15px;    
+}
+.editFooter{
+    gap: 14px;
+    justify-content: center !important;
+}
+.editFooter .btn{
+    border-radius: 1px !important;
+    width: 17% !important;
+}

@@ -1,0 +1,15 @@
+.generateFooter{
+    display: flex;
+    justify-content: center !important;
+}
+.generateFooter .Btn{
+    width: 94%; 
+    border-radius: 2px;
+}
+.nftHeading{
+    text-align: center;
+}
+.generateHeader h5{
+    margin-left: 150px;
+    margin-top: 16px;
+}

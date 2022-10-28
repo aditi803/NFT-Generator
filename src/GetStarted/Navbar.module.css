@@ -1,0 +1,56 @@
+/* .nftNavbar{
+    display: flex;
+} */
+.leftSide{
+    display: flex;
+    justify-content: space-around;
+}
+.navbar .row{
+    width: 1440px;
+    height: 63px;
+    margin-top: 21px;
+}
+.liSection{
+    color: #030815;
+    line-height: 17px;
+    margin-top: 10px;
+}
+.leftSide img{
+    height: 38.51px;
+    width: 39.78px;
+}
+.leftSide li{
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 17px;
+    font-family:'Poppins', sans-serif;
+}
+.bottom p{
+    text-align: center;
+    color: #eaeaea;
+    line-height: 17px;
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'Poppins', sans-serif;
+}
+.rightSide p{
+    text-align: right;
+    margin-left: 6px;
+    margin-right: 0px;
+    color: #eaeaea;
+    line-height: 16px;
+    margin-top: 10px;
+    font-weight: 400;
+    font-family: 'Poppins', sans-serif;
+}
+.rightSide {
+    display: flex;
+    /* margin-top: 10px; */
+}
+.profile{
+    height: 40px;
+    width: 40px;
+    border-radius: 30px;
+    background-color: #535353;
+}

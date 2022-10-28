@@ -1,0 +1,209 @@
+.footer {
+  height: auto;
+  width: 100%;
+  background-color: #fcfcfc;
+  padding-top: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
+  justify-content: center;
+}
+.NftGeneratorHeading{
+ display: flex;
+}
+.NftGeneratorHeading .logo{
+  width:38px !important;
+  height:38px !important
+}
+.footer .row {
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
+  justify-content: center;
+}
+.footer p {
+  opacity: 0.8;
+  color: #0b213e;
+  font-family: "Crushy Black";
+  font-size: 18px;
+}
+.footerheading {
+  color: #0b213e;
+  font-family: "Crushy Black";
+  font-size: 24px;
+}
+.footerText {
+  opacity: 0.8;
+  color: #0b213e;
+  font-family: "Crushy Black";
+  font-size: 16px;
+}
+.footer .NftGeneratorHeading p {
+  color: #000000;
+  font-family: "Crushy Black";
+  font-size: 20px;
+  margin-left: 10px;
+}
+.iconStyle {
+  height: 40px;
+  width: 40px;
+  color: white;
+  text-align: center;
+  margin-top: 8px;
+}
+.footer .paragraph {
+  color: #838383;
+  font-family: Roboto;
+  font-size: 14px;
+  text-align: center;
+}
+.IconSection {
+  display: inline-flex;
+}
+.iconContainer {
+  height: 56px;
+  width: 56px;
+  border-radius: 8px;
+  background-color: #2f66ee;
+  margin-left: 30px;
+  padding-left: 8px;
+}
+@media (max-width: 1399.98px) {
+  .NftGeneratorHeading{
+    display: flex;
+   }
+}
+@media (max-width: 1199.98px) {
+  .iconContainer {
+    height: 40px;
+    width: 40px;
+    border-radius: 8px;
+    background-color: #2f66ee;
+    margin-left: 10px;
+    padding-left: 8px;
+  }
+  .iconStyle {
+    height: 25px;
+    width: 25px;
+    color: white;
+    text-align: center;
+    margin-top: 8px;
+  }
+  .NftGeneratorHeading .logo{
+    width:38px !important;
+    height:38px !important
+  }
+  .NftGeneratorHeading{
+    display: flex;
+   }
+}
+@media (max-width: 991.98px) {
+  .IconSection {
+    display: inline-flex;
+  }
+  .iconContainer {
+    height: 40px;
+    width: 40px;
+    border-radius: 8px;
+    background-color: #2f66ee;
+    margin-left: 10px;
+    padding-left: 8px;
+  }
+  .iconStyle {
+    height: 25px;
+    width: 25px;
+    color: white;
+    text-align: center;
+    margin-top: 8px;
+  }
+  .NftGeneratorHeading .logo{
+    width:38px !important;
+    height:38px !important
+  }
+  .NftGeneratorHeading{
+    display: flex;
+   }
+}
+@media (max-width: 767.98px) {
+  .IconSection {
+    display: inline-flex;
+  }
+  .iconContainer {
+    height: 40px;
+    width: 40px;
+    border-radius: 8px;
+    background-color: #2f66ee;
+    margin-left: 10px;
+    padding-left: 8px;
+  }
+  .iconStyle {
+    height: 25px;
+    width: 25px;
+    color: white;
+    text-align: center;
+    margin-top: 8px;
+  }
+  .footer .row {
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+  }
+  .NftGeneratorHeading .logo{
+    width:38px !important;
+    height:38px !important
+  }
+  .NftGeneratorHeading{
+    display: flex;
+   }
+}
+@media (max-width: 575.98px) {
+  .footer p {
+    opacity: 0.8;
+    color: #0b213e;
+    font-family: "Crushy Black";
+    font-size: 16px;
+  }
+  .footer {
+    height: auto;
+    width: 100%;
+    background-color: #fcfcfc;
+    padding-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    justify-content: center;
+  }
+  .footer .row {
+    text-align: center;
+  }
+  .footerheading {
+    color: #0b213e;
+    font-family: "Crushy Black";
+    font-size: 20px;
+  }
+  .footerText {
+    opacity: 0.8;
+    color: #0b213e;
+    font-family: "Crushy Black";
+    font-size: 14px;
+  }
+  .iconContainer {
+    height: 40px;
+    width: 40px;
+    border-radius: 8px;
+    background-color: #2f66ee;
+    padding-left:0px;
+  }
+  .NftGeneratorHeading .logo{
+    width:38px !important;
+    height:38px !important
+  }
+  .NftGeneratorHeading{
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+   }
+}

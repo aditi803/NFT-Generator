@@ -1,0 +1,315 @@
+.container  {
+    margin-bottom: 40px;
+  }
+  .container .headingSection{
+    padding-top: 175px;
+    }
+  .container  .background{
+    background-image: url("../../assets/Decoration.png");
+  height: auto;
+  width: 100%;
+  background-size: contain;
+  }
+  /* .container {
+    height: max-content;
+    position: relative;
+  } */
+  .heading {
+    font-family: Kartooni;
+    font-size: 59px;
+    letter-spacing: 0;
+  }
+  
+  .title {
+    color: #2f66ee;
+    font-family: Kartooni;
+    font-size: 56px;
+    letter-spacing: 0;
+  }
+  
+  .button {
+    height: 40px;
+    width: 120px;
+    border-radius: 4px;
+    background-color: #2f66ee;
+    align-items: left;
+    color: #ffffff;
+    font-family: "Crushy Black";
+    border: none;
+    font-size: 18px;
+  }
+  .subheading {
+    color: #838383;
+    font-family: "Crushy Black";
+    font-size: 24px;
+    letter-spacing: 0;
+    line-height: 40px;
+    margin: 20px 0px;
+  }
+  .icon {
+    margin-right: 8px;
+    font-size: 21px;
+  }
+  .head span{
+    width: 624px !important;
+    height: 587.96px !important;
+  }
+  @media (max-width: 1598.98px){
+    .container .headingSection{
+      padding-top: 100px;
+      }
+      .heading {
+        font-family: Kartooni;
+        font-size:59px;
+        letter-spacing: 0;
+      }
+    .container  .background{
+        background-image: url("../../assets/Decoration.png");
+        content: "";
+    display: block;
+    height: 100%;
+    width: 100%;
+    background-size: contain;
+    background-repeat: no-repeat;
+      }
+      .head span{
+        width: 479px !important;
+        height: 587.96px !important;
+      }
+  }
+  @media (max-width: 1399.98px) {
+    .container .headingSection{
+      padding-top: 100px;
+      }
+    .container  .background{
+    background-image: url("../../assets/Decoration.png");
+    content: "";
+    display: block;
+    height: 100%;
+    width: 100%;
+    /* position: absolute; */
+    background-size: contain;
+    background-repeat: no-repeat;
+      }
+      .head span{
+        width: 450px !important;
+        height: 400px !important;
+      }
+      .heading {
+        font-family: Kartooni;
+        font-size:50px;
+        letter-spacing: 0;
+      }
+      
+  }
+  @media (max-width: 1199.98px) {
+    .container .headingSection{
+      padding-top:100px;
+      }
+    .container  .background{
+      background-image: url("../../assets/Decoration.png");
+    height: auto;
+    width: 100%;
+    background-size: contain;
+    }
+    .heading {
+      font-family: Kartooni;
+      font-size: 56px;
+      letter-spacing: 0;
+    }
+    .title {
+      color: #2f66ee;
+      font-family: Kartooni;
+      font-size: 56px;
+      letter-spacing: 0;
+    }
+  
+    .button {
+      height: 40px;
+      width: 120px;
+      border-radius: 4px;
+      background-color: #2f66ee;
+      align-items: left;
+      color: #ffffff;
+      font-family: "Crushy Black";
+      border: none;
+      font-size: 18px;
+    }
+    .subheading {
+      color: #838383;
+      font-family: "Crushy Black";
+      font-size: 24px;
+      letter-spacing: 0;
+      line-height: 40px;
+    }
+    .icon {
+      margin-right: 8px;
+      font-size: 21px;
+    }
+   .head span {
+      width: auto !important;
+      justify-content: center;
+      height: auto !important;
+    }
+  }
+  @media (max-width: 991.98px) {
+    .container .headingSection{
+      padding-top: 40px;
+      }
+    .container  .background{
+      background-image: url("../../assets/Decoration.png");
+    height: auto;
+    width: 100%;
+    background-size: contain;
+    }
+  
+    .heading {
+      font-family: Kartooni;
+      font-size: 18px;
+      letter-spacing: 0;
+    }
+    .title {
+      color: #2f66ee;
+      font-family: Kartooni;
+      font-size: 18px;
+      letter-spacing: 0;
+    }
+  
+    .button {
+      height: 33px;
+      width: 102px;
+      border-radius: 4px;
+      background-color: #2f66ee;
+      align-items: left;
+      color: #ffffff;
+      font-family: "Crushy Black";
+      border: none;
+      font-size: 14px;
+    }
+    .head span {
+      width: 250px !important;
+      height: 250px !important;
+    }
+    .subheading {
+      color: #838383;
+      font-family: "Crushy Black";
+      font-size: 14px;
+      letter-spacing: 0;
+      line-height: 40px;
+    }
+    .icon {
+      margin-right: 8px;
+      font-size: 21px;
+    }
+  }
+  @media (max-width: 767.98px) {
+    .container .headingSection{
+      padding-top: 30px;
+      }
+    .container  .background{
+      background-image: url("../../assets/Decoration.png");
+    height: auto;
+    width: 100%;
+    background-size: contain;
+    }
+    .heading {
+      font-family: Kartooni;
+      font-size:20px;
+      letter-spacing: 0;
+    }
+   
+    .title {
+      color: #2f66ee;
+      font-family: Kartooni;
+      font-size:20px;
+    }
+  
+    .button {
+      height: 40px;
+      width: 120px;
+      border-radius: 4px;
+      background-color: #2f66ee;
+      align-items: left;
+      color: #ffffff;
+      font-family: "Crushy Black";
+      border: none;
+      font-size: 18px;
+    }
+    .subheading {
+      color: #838383;
+      font-family: "Crushy Black";
+      font-size:16px;
+      line-height: 30px;
+  
+    }
+    .icon {
+      margin-right: 8px;
+      font-size: 21px;
+    }
+    .head{
+      text-align: center;
+    }
+    .head span {
+      width: 250px !important;
+      height: 250px !important;
+    }
+  }
+  @media (max-width: 575.98px) {
+    .container .headingSection{
+      padding-top:10px;
+      }
+    .container  .background{
+      background-image: url("../../assets/Decoration.png");
+    height: auto;
+    width: 100%;
+    background-color: white;
+    background-size: contain;
+    }
+    .heading {
+      font-family: Kartooni;
+      font-size: 16px;
+      letter-spacing: 0;
+    }
+    .title {
+      color: #2f66ee;
+      font-family: Kartooni;
+      font-size: 16px;
+      letter-spacing: 0;
+    }
+  
+    .button {
+      height: 31px;
+      width: 103px;
+      border-radius: 4px;
+      background-color: #2f66ee;
+      align-items: left;
+      color: #eed8d8;
+      font-family: "Crushy Black";
+      border: none;
+      font-size: 12px;
+    }
+    .subheading {
+      color: #838383;
+      font-family: "Crushy Black";
+      font-size: 16px;
+      letter-spacing: 0;
+      line-height: 40px;
+    }
+    .icon {
+      margin-right: 8px;
+      font-size: 21px;
+    }
+    .head span {
+      width: 200px !important;
+      justify-content: center;
+      height: 200px !important;
+    }
+    .container .headingSection .head {
+      margin-left: auto;
+      margin-right: auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+  

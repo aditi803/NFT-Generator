@@ -1,0 +1,307 @@
+.leftContent {
+  height: 300px;
+  width: 512px;
+  border-radius: 16px;
+  background-color: #f3f7fd;
+  margin-right: auto;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+  padding: 20px 50px;
+}
+.uppercontent .HowitWorkImage {
+  height: 100px !important;
+  width: 130px !important;
+  margin-left: 40px;
+}
+.section h1 {
+  height: 48px;
+  width: 302px;
+  color: #0b213e;
+  font-family: "Kartooni";
+  margin-top: 10px;
+  font-size: 48px;
+  letter-spacing: 0;
+  line-height: 48px;
+  margin-left: 70px;
+}
+.section {
+  margin-top: 60px;
+}
+.content {
+  margin-top: 70px;
+  width: 80%;
+  text-align: left;
+}
+.content button{
+  background: transparent;
+  border: none;
+}
+.content h5{
+  text-align: left;
+}
+.leftContent .title {
+  height: 24px;
+  width: 189px;
+  color: #0b213e;
+  font-family: "Crushy Black";
+  font-size: 24px;
+  letter-spacing: 0;
+  line-height: 26px;
+}
+.leftContent .text {
+  height: 96px;
+  width: 349px;
+  color: #838383;
+  font-family: "Crushy Black";
+  font-size: 18px;
+}
+.section .leftContent .numberText {
+  opacity: 0.1;
+  color: #1c83e5;
+  font-family: Poppins;
+  font-size: 80px;
+  font-weight: bold;
+  text-align: center;
+  width: 100%;
+  text-align: right;
+  letter-spacing: 0;
+  line-height: 96px;
+}
+.section .leftContent .uppercontent {
+  display: flex;
+  align-items: center;
+}
+@media (max-width: 1598.98px){
+  .uppercontent .HowitWorkImage {
+    height: 100px !important;
+    width: 130px !important;
+    margin-top: 0px;
+    margin-left: 10px;
+  }
+  .section{
+      margin-top: 100px;
+    }
+  .leftContent {
+    height: 300px;
+    width: 512px;
+    border-radius: 16px;
+    background-color: #f3f7fd;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 20px 50px;
+  }
+  .section h1 {
+    height: 48px;
+    width: 302px;
+    color: #0b213e;
+    font-family: "Kartooni";
+    margin-top: 10px;
+    font-size: 48px;
+    letter-spacing: 0;
+    line-height: 48px;
+    margin-left: 70px;
+  }
+}
+@media (max-width: 1399.98px) {
+  .uppercontent .HowitWorkImage {
+    height: 100px !important;
+    width: 130px !important;
+    margin-left: 10px;
+  }
+  .leftContent {
+    height: 300px;
+    width: 512px;
+    border-radius: 16px;
+    background-color: #f3f7fd;
+    margin-right: auto;
+    margin-left: auto;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 50px;
+  }
+  .section h1 {
+    height: 48px;
+    width: 302px;
+    color: #0b213e;
+    font-family: "Kartooni";
+    margin-top: 10px;
+    font-size: 48px;
+    letter-spacing: 0;
+    line-height: 48px;
+    margin-left: 20px;
+  }
+
+}
+@media (max-width: 1199.98px) {
+  .section .leftContent .numberText {
+    opacity: 0.1;
+    color: #1c83e5;
+    font-family: Poppins;
+    font-size: 80px;
+    font-weight: bold;
+    text-align: center;
+    letter-spacing: 0;
+    width: 100%;
+    text-align: right;
+  }
+  .leftContent {
+    height: 300px;
+    width: 440px !important;
+    border-radius: 16px;
+    background-color: #f3f7fd;
+    padding: 20px 50px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .uppercontent .HowitWorkImage {
+    height: 100px !important;
+    width: 150px !important;
+    margin-left: 10px;
+    margin-top: 0px;
+  }
+  .section h1 {
+    height: 48px;
+    width: 302px;
+    color: #0b213e;
+    font-family: "Kartooni";
+    margin-top: 10px;
+    font-size: 48px;
+    letter-spacing: 0;
+    line-height: 48px;
+    margin-left: 15px;
+  }
+}
+@media (max-width: 991.98px) {
+  .section .leftContent .numberText {
+    opacity: 0.1;
+    color: #1c83e5;
+    font-family: Poppins;
+    font-size:60px;
+    font-weight: bold;
+    letter-spacing: 0;
+    text-align: right;
+    width: 100%;
+    line-height: 96px;
+  }
+  .leftContent .text {
+    height: 96px;
+    width: 349px;
+    color: #838383;
+    font-family: "Crushy Black";
+    font-size: 12px;
+  }
+  .leftContent {
+    height: 300px;
+    width:315px !important;
+    border-radius: 16px;
+    background-color: #f3f7fd;
+   padding-left: 20px;
+   padding-right: 20px;
+   margin-left: auto;
+   margin-right: auto;
+  }
+  .uppercontent .HowitWorkImage {
+    height: 70px !important;
+    width: 100px !important;
+    margin-left: 10px;
+    margin-top: 0px;
+  }
+}
+@media (max-width: 767.98px) {
+  .section .leftContent .numberText {
+    opacity: 0.1;
+    color: #1c83e5;
+    font-family: Poppins;
+    font-size: 40px;
+    font-weight: bold;
+  }
+  .section h1{
+      height: 48px;
+      width: 302px;
+      color: #0b213e;
+      font-family: "Kartooni";
+      margin-top: 10px;
+      font-size: 48px;
+      letter-spacing: 0;
+      line-height: 48px;
+      text-align: center;
+      width: auto;
+    
+  }
+  .leftContent .title {
+    height: 24px;
+    width: auto;
+    color: #0b213e;
+    font-family: "Crushy Black";
+    font-size: 16px;
+  }
+
+  .leftContent .text {
+    height: 96px;
+    width: auto;
+    color: #838383;
+    font-family: "Crushy Black";
+    font-size: 12px;
+  }
+  .uppercontent .HowitWorkImage {
+    height: 64px !important;
+    width: 64px !important;
+    margin-left: 0px;
+    margin-top: 0px;
+  }
+  .leftContent {
+    height: 300px;
+    width: 512px;
+    margin-bottom: 20px;
+    border-radius: 16px;
+    background-color: #f3f7fd;
+    margin-right: auto;
+   margin-left: auto;
+  }
+}
+@media (max-width: 575.98px) {
+  .section .leftContent .numberText {
+    opacity: 0.1;
+    color: #1c83e5;
+    font-family: Poppins;
+    font-size: 76px;
+    font-weight: bold;
+    letter-spacing: 0;
+    width: 100%;
+    text-align: right;
+  }
+  .section h1 {
+    font-size: 30px;
+    text-align: center;
+    width: auto;
+  }
+  .leftContent {
+    height: 300px;
+    width: 512px;
+    border-radius: 16px;
+    background-color: #f3f7fd;
+    padding-left: 25px;
+    padding-right: 25px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .uppercontent .HowitWorkImage {
+    height: 85px !important;
+    width:150px !important;
+    margin-top: 0px;
+    margin-left: 10px;
+  }
+  .section {
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+  }
+  .content {
+    margin-top: 70px;
+    
+}
+}

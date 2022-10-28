@@ -1,0 +1,683 @@
+.container {
+  background-image: url("../../assets/Decoration.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+ 
+}
+.PopularCollection{
+  background-color: #f3f7fd;
+  width: 100%;
+  height: auto;
+  margin-bottom: 30px;
+  margin-top: 100px;
+  padding-left: auto;
+  padding-right: auto;
+  align-items: center;
+  justify-content: center;
+}
+.container h4 {
+  color: #0b213e;
+  font-family: "Crushy Black";
+  font-size: 24px;
+  letter-spacing: 0;
+  line-height: 26px;
+  position: relative;
+  text-align: right;
+}
+.container h4::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 75px;
+  top: 30px;
+  height: 4px;
+  background: rgb(47, 102, 238);
+  display: inline-block;
+  border-radius: 5px;
+}
+
+.heading {
+  color: #0b213e;
+  font-family: Kartooni;
+  font-size: 48px;
+  letter-spacing: 0;
+}
+.title {
+  color: #0b213e;
+  font-family: "Crushy Black";
+  font-size: 24px;
+}
+.text {
+  height: 32px;
+  width: 221px;
+  color: #838383;
+  font-family: "Crushy Black";
+  font-size: 18px;
+}
+.Content {
+  height: 400px;
+  width: 512px;
+  border-radius: 32px;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+  margin-bottom: 30px;
+  justify-content: center;
+  position: relative;
+  background-color: #ffffff;
+}
+.cardHeading {
+  margin-top: -30px;
+}
+.emptyContainer {
+  box-sizing: border-box;
+  height: 80px;
+  width: 80px;
+  border: 4px solid #fcfcfc;
+  border-radius: 16px;
+  background-color: #d0d0d2;
+  position: relative;
+  top: 0%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.Content .popularCollectionImage {
+  margin-top: 50px !important;
+  height: 224px !important;
+  width: 420px !important;
+}
+.Content .Columntext {
+  text-align: center;
+  color: #0b213e;
+  font-family: "Crushy Black";
+  font-size: 16px;
+}
+.container .likeContainer {
+  height: 40px;
+  width: 65px;
+  position: absolute;
+  top: 20%;
+  left: 75%;
+  border-radius: 8px;
+  color: white;
+  padding-top: 5px;
+  background-color: #1c83e5;
+}
+
+.horizontalLine {
+  box-sizing: border-box;
+  height: 0.1px;
+  width: 80px;
+  border: 4px solid #1c83e5;
+}
+.upperHeading {
+  width: 93%;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media (max-width: 1598.98px) {
+  .upperHeading {
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .PopularCollection{
+    background-color: #f3f7fd;
+    width: 100%;
+    height: auto;
+    margin-bottom: 30px;
+    margin-top: 100px; 
+    padding-left: auto;
+    padding-right: auto;
+    align-items: center;
+    justify-content: center;
+  }
+  .container {
+    background-image: url("../../assets/Decoration.png");
+    background-repeat: no-repeat;
+}
+}
+@media (max-width: 1399.98px) {
+  .container {
+    background-image: url("../../assets/Decoration.png");
+    background-repeat: round;
+  }
+  .PopularCollection{
+    background-color: #f3f7fd;
+    width: 100%;
+    height: auto;
+    margin-bottom: 30px;
+    margin-top: 100px;
+    padding-left: auto;
+    padding-right: auto;
+    align-items: center;
+    justify-content: center;
+    background-color: #f3f7fd;
+  }
+  .container h4 {
+    color: #0b213e;
+    font-family: "Crushy Black";
+    font-size: 24px;
+    letter-spacing: 0;
+    line-height: 26px;
+  }
+  .heading {
+    color: #0b213e;
+    font-family: Kartooni;
+    font-size: 48px;
+    letter-spacing: 0;
+  }
+  .title {
+    color: #0b213e;
+    font-family: "Crushy Black";
+    font-size: 24px;
+  }
+  .text {
+    height: 32px;
+    width: 221px;
+    color: #838383;
+    font-family: "Crushy Black";
+    font-size: 18px;
+  }
+  .Content {
+    height: 400px;
+    width: 512px;
+    border-radius: 32px;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    margin-bottom: 30px;
+    justify-content: center;
+    position: relative;
+    background-color: #ffffff;
+  }
+  .cardHeading {
+    margin-top: -30px;
+  }
+  .emptyContainer {
+    box-sizing: border-box;
+    height: 80px;
+    width: 80px;
+    border: 4px solid #fcfcfc;
+    border-radius: 16px;
+    background-color: #d0d0d2;
+    position: relative;
+    top: 0%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .Content .popularCollectionImage {
+    margin-top: 50px !important;
+    height: 224px !important;
+    width: 420px !important;
+  }
+  .Content .Columntext {
+    text-align: center;
+    color: #0b213e;
+    font-family: "Crushy Black";
+    font-size: 16px;
+  }
+  .container .likeContainer {
+    height: 40px;
+    width: 65px;
+    position: absolute;
+    top: 20%;
+    left: 75%;
+    border-radius: 8px;
+    color: white;
+    padding-top: 5px;
+    background-color: #1c83e5;
+  }
+
+  .horizontalLine {
+    box-sizing: border-box;
+    height: 0.1px;
+    width: 80px;
+    border: 4px solid #1c83e5;
+  }
+}
+
+@media (max-width: 1199.98px) {
+  .container {
+    background-image: url("../../assets/Decoration.png");
+    background-repeat: no-repeat;
+   
+  }
+  .PopularCollection{
+    width: 100%;
+    height: auto;
+    margin-bottom: 30px;
+    margin-top: 100px;
+    padding-left: auto;
+    padding-right: auto;
+    align-items: center;
+    justify-content: center;
+    background-color: #f3f7fd;
+  }
+  .container h4 {
+    color: #0b213e;
+    font-family: "Crushy Black";
+    font-size: 24px;
+    letter-spacing: 0;
+    line-height: 26px;
+  }
+  .heading {
+    color: #0b213e;
+    font-family: Kartooni;
+    font-size: 35px;
+    letter-spacing: 0;
+  }
+  .title {
+    color: #0b213e;
+    font-family: "Crushy Black";
+    font-size: 24px;
+  }
+  .text {
+    height: 32px;
+    width: 221px;
+    color: #838383;
+    font-family: "Crushy Black";
+    font-size: 18px;
+  }
+  .Content {
+    height: 400px;
+    width: 400px;
+    border-radius: 32px;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    margin-bottom: 30px;
+    justify-content: center;
+    position: relative;
+    background-color: #ffffff;
+  }
+  .cardHeading {
+    margin-top: -30px;
+  }
+  .emptyContainer {
+    box-sizing: border-box;
+    height: 80px;
+    width: 80px;
+    border: 4px solid #fcfcfc;
+    border-radius: 16px;
+    background-color: #d0d0d2;
+    position: relative;
+    top: 0%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .Content .popularCollectionImage {
+    margin-top: 50px !important;
+    height: 224px !important;
+    width: 330px !important;
+  }
+  .Content .Columntext {
+    text-align: center;
+    color: #0b213e;
+    font-family: "Crushy Black";
+    font-size: 16px;
+  }
+  .container .likeContainer {
+    height: 40px;
+    width: 65px;
+    position: absolute;
+    top: 20%;
+    left: 68%;
+    border-radius: 8px;
+    color: white;
+    padding-top: 5px;
+    background-color: #1c83e5;
+  }
+
+  .horizontalLine {
+    box-sizing: border-box;
+    height: 0.1px;
+    width: 80px;
+    border: 4px solid #1c83e5;
+  }
+}
+@media (max-width: 991.98px) {
+  .container {
+    background-image: url("../../assets/Decoration.png");
+    background-repeat: no-repeat;
+  }
+  .PopularCollection{
+    background-color: #f3f7fd;
+    width: 100%;
+    height: auto;
+    margin-bottom: 30px;
+    margin-top: 100px;
+    padding-left: auto;
+    padding-right: auto;
+    align-items: center;
+    justify-content: center;
+  }
+  .container p {
+    font-size: 14px;
+  }
+  .container h4 {
+    color: #0b213e;
+    font-family: "Crushy Black";
+    font-size: 26px;
+    letter-spacing: 0;
+    line-height: 26px;
+  }
+  .heading {
+    color: #0b213e;
+    font-family: Kartooni;
+    font-size: 26px;
+    letter-spacing: 0;
+  }
+  .title {
+    color: #0b213e;
+    font-family: "Crushy Black";
+    font-size: 24px;
+  }
+  .text {
+    height: 32px;
+    width: 221px;
+    color: #838383;
+    font-family: "Crushy Black";
+    font-size: 18px;
+  }
+  .Content {
+    height: 400px;
+    width: 320px;
+    border-radius: 32px;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    margin-bottom: 30px;
+    justify-content: center;
+    position: relative;
+    background-color: #ffffff;
+  }
+  .cardHeading {
+    margin-top: -30px;
+  }
+  .emptyContainer {
+    box-sizing: border-box;
+    height: 80px;
+    width: 80px;
+    border: 4px solid #fcfcfc;
+    border-radius: 16px;
+    background-color: #d0d0d2;
+    position: relative;
+    top: 0%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .Content .popularCollectionImage {
+    margin-top: 50px !important;
+    height: 200px !important;
+    width: 240px !important ;
+  }
+  .Content .Columntext {
+    text-align: center;
+    color: #0b213e;
+    font-family: "Crushy Black";
+    font-size: 16px;
+  }
+  .container .likeContainer {
+    height: 40px;
+    width: 65px;
+    position: absolute;
+    top: 20%;
+    left: 59%;
+    border-radius: 8px;
+    color: white;
+    padding-top: 5px;
+    background-color: #1c83e5;
+  }
+
+  .horizontalLine {
+    box-sizing: border-box;
+    height: 0.1px;
+    width: 80px;
+    border: 4px solid #1c83e5;
+  }
+}
+@media (max-width: 767.98px) {
+  .container {
+    background-image: url("../../assets/Decoration.png");
+    background-position: no-repeat;
+  }
+  .PopularCollection{
+    width: 100%;
+    height: auto;
+    margin-bottom: 30px;
+    margin-top: 100px;
+    padding-left: auto;
+    padding-right: auto;
+    align-items: center;
+    justify-content: center;
+    background-color: #f3f7fd;
+  }
+  .container h4 {
+    color: #0b213e;
+    font-family: "Crushy Black";
+    font-size: 24px;
+    letter-spacing: 0;
+    line-height: 26px;
+  }
+  .heading {
+    color: #0b213e;
+    font-family: Kartooni;
+    font-size: 21px;
+    letter-spacing: 0;
+  }
+  .title {
+    color: #0b213e;
+    font-family: "Crushy Black";
+    font-size: 24px;
+  }
+  .text {
+    height: 32px;
+    width: 221px;
+    color: #838383;
+    font-family: "Crushy Black";
+    font-size: 18px;
+  }
+  .Content {
+    width: 40% !important;
+    border-radius: 32px;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    margin-bottom: 30px;
+    justify-content: center;
+    position: relative;
+    background-color: #ffffff;
+  }
+  .cardHeading {
+    margin-top: -30px;
+  }
+  .emptyContainer {
+    box-sizing: border-box;
+    height: 80px;
+    width: 80px;
+    border: 4px solid #fcfcfc;
+    border-radius: 16px;
+    background-color: #d0d0d2;
+    position: relative;
+    top: 0%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .Content .popularCollectionImage {
+    margin-top: 50px !important;
+    height: 180px !important;
+    width: 180px !important;
+  }
+  .Content .Columntext {
+    text-align: center;
+    color: #0b213e;
+    font-family: "Crushy Black";
+    font-size: 16px;
+  }
+  .container .likeContainer {
+    height: 40px;
+    width: 57px;
+    position: absolute;
+    top: 20%;
+    left: 58%;
+    border-radius: 8px;
+    color: white;
+    padding-top: 5px;
+    background-color: #1c83e5;
+  }
+
+  .horizontalLine {
+    box-sizing: border-box;
+    height: 0.1px;
+    width: 80px;
+    border: 4px solid #1c83e5;
+  }
+}
+@media (max-width: 575.98px) {
+  .container {
+    background-image: url("../../assets/Decoration.png");
+    background-repeat: no-repeat;
+  }
+  .PopularCollection{
+    background-color: #f3f7fd;
+    width: 100%;
+    height: auto;
+    margin-bottom: 30px;
+    margin-top: 100px;
+    padding-left: auto;
+    padding-right: auto;
+    align-items: center;
+    justify-content: center;
+  }
+  .container h4::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 42px;
+    top: 30px;
+    height: 4px;
+    background: rgb(47, 102, 238);
+    display: inline-block;
+    border-radius: 5px;
+  }
+  .container h4 {
+    color: #0b213e;
+    font-family: "Crushy Black";
+    font-size: 24px;
+    letter-spacing: 0;
+    line-height: 26px;
+  }
+  .heading {
+    color: #0b213e;
+    font-family: Kartooni;
+    font-size: 16px;
+    width: auto;
+    /* margin-left: 30px; */
+    /* line-height: 48px; */
+  }
+  .title {
+    color: #0b213e;
+    font-family: "Crushy Black";
+    font-size: 24px;
+  }
+  .container .columnContainer {
+    width: 80%;
+  }
+  .container h1 {
+    font-size: 13px;
+    margin-left: 0px;
+  }
+  .container h4 {
+    font-size: 13px;
+    margin-left: 0px;
+  }
+  .container p {
+    font-size: 10px;
+    margin-left: 0px;
+  }
+  .text {
+    /* height: 32px;
+    width: 221px; */
+    color: #838383;
+    font-family: "Crushy Black";
+    font-size: 18px;
+    /* margin-left: 30px; */
+  }
+  .Content {
+    width: 80% !important;
+    border-radius: 32px;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    margin-bottom: 30px;
+    justify-content: center;
+    position: relative;
+    background-color: #ffffff;
+  }
+  .cardHeading {
+    margin-top: -30px;
+  }
+  .emptyContainer {
+    box-sizing: border-box;
+    height: 80px;
+    width: 80px;
+    border: 4px solid #fcfcfc;
+    border-radius: 16px;
+    background-color: #d0d0d2;
+    position: relative;
+    top: 0%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .Content .popularCollectionImage {
+    margin-top: 50px !important;
+    height: 180px !important;
+    width: 170px !important;
+  }
+  .Content .Columntext {
+    text-align: center;
+    color: #0b213e;
+    font-family: "Crushy Black";
+    font-size: 16px;
+  }
+  .container .likeContainer {
+    height: 34px;
+    width: 47px;
+    position: absolute;
+    top: 20%;
+    left: 60%;
+    border-radius: 8px;
+    color: white;
+    padding-top: 5px;
+    background-color: #1c83e5;
+  }
+
+  .horizontalLine {
+    box-sizing: border-box;
+    height: 0.1px;
+    width: 80px;
+    border: 4px solid #1c83e5;
+    margin-left: 0px;
+  }
+  .columnHeading {
+    width: 50%;
+  }
+  .columnHeading .headingExplore ::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 100px;
+    height: 4px;
+    background: rgb(47, 102, 238);
+    display: inline-block;
+  }
+  .upperHeading {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

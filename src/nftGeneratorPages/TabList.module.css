@@ -1,0 +1,90 @@
+.tabList{
+    background-color: #043985;
+    margin-right: 0;
+    width: 80px;
+    /* margin-top: 50px; */
+    height:calc(100vh - 70px);
+    /* position: relative; */
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+    flex-grow: 0;
+    margin-top: 70px;
+    border-right: 1px solid #ddd;    
+}
+.tabLast{
+    background: #fff;
+    border: none;
+}
+.tabBox{
+    border-bottom: 1px solid #043985;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 15px;
+    font-size: 10px;
+    color: white;
+}
+.tabBox .icon{
+    width: 35px;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    color:#043985;
+}
+.tabBox span{
+    fill:#043985;
+    color: #043985;
+    font-size: 12px;
+    line-height: 11px;
+    margin-top: 10px;
+    text-transform: capitalize;
+}
+.verticalTabs{
+    /* background-color: white; */
+    padding: 0 !important;
+}
+.verticaltabBox{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 0px;
+    font-size: 10px;
+    background-color: #043985;
+    color: white;
+    border-bottom: 1px solid #053dae;
+}
+.verticaltabBox:hover{
+    background-color: #f0f1f6;
+    color: #043985;
+}
+.verticaltabBox span{
+    font-size: 12px;
+    line-height: 11px;
+    margin-top: 10px;
+    text-transform: capitalize;
+}
+.videoOption{
+    position: fixed;
+    bottom: 0px;
+    text-align: center;
+    color: #fff;
+    left: 0px;
+    padding-bottom: 5px;
+    cursor: pointer;
+    width: 80px;
+    border-top: 1px solid rgba(240, 241, 246, 0.2);
+    padding-top: 5px;
+    font-size: 18px;
+    font-weight: 100;
+    text-decoration: none;
+}
+.videoOption:hover{
+    background-color: #f0f1f6;
+    color: #043985;
+}
+
+
+

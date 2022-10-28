@@ -1,0 +1,386 @@
+.link {
+  color: #343434;
+  font-family: "Crushy Black";
+  font-size: 18px;
+  margin-left: 50px;
+  letter-spacing: 0;
+  line-height: 24px;
+  text-align: center;
+}
+.logo .logoImage{
+  width:"38px" !important;
+  height: 38px !important;
+}
+.contact {
+  color: #343434;
+  font-family: "Crushy Black";
+  font-size: 18px;
+  margin-left: 50px;
+  letter-spacing: 0;
+  line-height: 24px;
+  text-align: center;
+}
+.unorderedList{
+  margin-left: 370px !important;
+}
+.form .signup {
+  height: 40px;
+  width: 120px;
+  border-radius: 4px;
+  background-color: #2f66ee;
+  color: #ffffff;
+  font-family: "Crushy Black";
+  font-size: 18px;
+}
+.logoText {
+  margin-left: 10px;
+  font-size: 20px;
+  margin-top: 4px;
+  font-family: "Crushy Black";
+}
+.form{
+  border-left: 2px solid #dcdef3;
+}
+.logo {
+  margin-left: 10px;
+  display: flex;
+  margin-top: 10px;
+}
+.form .login {
+  height: 40px;
+  width: 80px;
+  color: #2d200b;
+  font-family: "Crushy Black";
+  font-size: 18px;
+  letter-spacing: 0;
+  line-height: 28px;
+  text-align: center;
+}
+@media (max-width: 1598.98px){
+  .link {
+    color: #343434;
+    font-family: "Crushy Black";
+    font-size: 18px;
+    margin-left: 50px;
+    letter-spacing: 0;
+    line-height: 24px;
+    text-align: center;
+  }
+  .contact {
+    color: #343434;
+    font-family: "Crushy Black";
+    font-size: 18px;
+    margin-left: 40px;
+    letter-spacing: 0;
+    line-height: 24px;
+    text-align: center;
+  }
+  .unorderedList{
+   margin-left: 300px !important;
+  }
+  .form .signup {
+    height: 50px;
+    width: 120px;
+    border-radius: 4px;
+    background-color: #2f66ee;
+    color: #ffffff;
+    font-family: "Crushy Black";
+    font-size: 18px;
+  }
+  .logoText {
+    margin-left: 10px;
+    font-family: "Crushy Black";
+  }
+  .form .login {
+    height: 40px;
+    width: 80px;
+    color: #2d200b;
+    font-family: "Crushy Black";
+    font-size: 18px;
+    letter-spacing: 0;
+    line-height: 28px;
+    text-align: center;
+  }
+  .logo .logoImage{
+    width:"38px" !important;
+    height: 38px !important;
+  }
+}
+
+@media (max-width: 1399.98px) {
+  .link {
+    color: #343434;
+    font-family: "Crushy Black";
+    font-size: 18px;
+    letter-spacing: 0;
+    line-height: 24px;
+    text-align: center;
+  }
+  .contact {
+    color: #343434;
+    font-family: "Crushy Black";
+    font-size: 18px;
+    margin-left: 40px;
+    letter-spacing: 0;
+    line-height: 24px;
+    text-align: center;
+  }
+  .form .signup {
+    height: 40px;
+    width: 120px;
+    border-radius: 4px;
+    background-color: #2f66ee;
+    color: #ffffff;
+    font-family: "Crushy Black";
+    font-size: 18px;
+  }
+  .logoText {
+    margin-left: 10px;
+    font-family: "Crushy Black";
+    margin-top: 4px;
+  }
+
+  .form .login {
+    height: 40px;
+    width: 72px;
+    color: #2d200b;
+    font-family: "Crushy Black";
+    font-size: 18px;
+    letter-spacing: 0;
+    line-height: 28px;
+    text-align: center;
+  }
+  .logo .logoImage{
+    width:"38px" !important;
+    height: 38px !important;
+  }
+  .unorderedList{
+    margin-left: 110px !important;
+   }
+}
+@media (max-width: 1199.98px) {
+  .link {
+    color: #343434;
+    font-family: "Crushy Black";
+    font-size: 18px;
+    margin-left: 20px !important;
+    letter-spacing: 0;
+    line-height: 24px;
+    text-align: center;
+  }
+  .unorderedList{
+    margin-left:40px !important;
+   }
+  .contact {
+    color: #343434;
+    font-family: "Crushy Black";
+    font-size: 18px;
+    margin-left: 20px !important;
+    letter-spacing: 0;
+    line-height: 24px;
+    text-align: center;
+  }
+  .form .signup {
+    height: 40px;
+    width: 120px;
+    border-radius: 4px;
+    background-color: #2f66ee;
+    color: #ffffff;
+    font-family: "Crushy Black";
+    font-size: 18px;
+  }
+  .logoText {
+    margin-left: 10px;
+    font-family: "Crushy Black";
+  }
+
+  .form .login {
+    height: 40px;
+    width: 80px;
+    color: #2d200b;
+    font-family: "Crushy Black";
+    font-size: 18px;
+    letter-spacing: 0;
+    line-height: 28px;
+    text-align: center;
+  }
+  .logo .logoImage{
+    width:"38px" !important;
+    height: 38px !important;
+  }
+}
+@media (max-width: 991.98px) {
+  .logo {
+    margin-left: 10px;
+    display: flex;
+  }
+ .form{
+    border-left: none;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+  }
+  .link {
+    color: #343434;
+    font-family: "Crushy Black";
+    font-size: 14px;
+    letter-spacing: 0;
+    line-height: 24px;
+    text-align: center;
+  }
+  .contact {
+    color: #343434;
+    font-family: "Crushy Black";
+    font-size: 14px;
+    margin-left: 40px;
+    letter-spacing: 0;
+    line-height: 24px;
+    text-align: center;
+  }
+  .form .signup {
+    height: 34px;
+    width: 78px;
+    border-radius: 4px;
+    background-color: #2f66ee;
+    color: #ffffff;
+    font-family: "Crushy Black";
+    font-size: 14px;
+  }
+  .logoText {
+    margin-left: 10px;
+    font-family: "Crushy Black";
+  }
+
+  .form .login {
+    height: 28px;
+    width: 47px;
+    color: #2d200b;
+    font-family: "Crushy Black";
+    font-size: 14px;
+    letter-spacing: 0;
+    line-height: 28px;
+    text-align: center;
+  }
+  .logo .logoImage{
+    width:"38px" !important;
+    height: 38px !important;
+  }
+  .unorderedList{
+    margin-left: auto !important;
+    margin-right: auto !important;
+   }
+}
+@media (max-width: 767.98px) {
+  .link {
+    color: #343434;
+    font-family: "Crushy Black";
+    font-size: 18px;
+    letter-spacing: 0;
+    line-height: 24px;
+    text-align: center;
+  }
+  .contact {
+    color: #343434;
+    font-family: "Crushy Black";
+    font-size: 18px;
+    margin-left: 40px;
+    letter-spacing: 0;
+    line-height: 24px;
+    text-align: center;
+  }
+  .form .signup {
+    height: 40px;
+    width: 120px;
+    border-radius: 4px;
+    background-color: #2f66ee;
+    color: #ffffff;
+    font-family: "Crushy Black";
+    font-size: 18px;
+  }
+  .logoText {
+    margin-left: 10px;
+    font-family: "Crushy Black";
+  }
+
+  .form .login {
+    height: 28px;
+    width: 47px;
+    color: #2d200b;
+    font-family: "Crushy Black";
+    font-size: 18px;
+    letter-spacing: 0;
+    line-height: 28px;
+    text-align: center;
+  }
+  .logo .logoImage{
+    width:"38px" !important;
+    height: 38px !important;
+  }
+}
+@media (max-width: 575.98px) {
+  .logo {
+    margin-left: 10px;
+  }
+  .link {
+    color: #343434;
+    font-family: "Crushy Black";
+    font-size: 18px;
+    letter-spacing: 0;
+    line-height: 24px;
+    text-align: center;
+  }
+  .contact {
+    color: #343434;
+    font-family: "Crushy Black";
+    font-size: 18px;
+    margin-left: 40px;
+    letter-spacing: 0;
+    line-height: 24px;
+    text-align: center;
+  }
+  .form {
+    margin-left: auto;
+    margin-right: auto;
+    border-left:none;
+    align-items: center;
+    width: 80%;
+    justify-content: center;
+  }
+ .logoText {
+    margin-left: 10px;
+    font-family: "Crushy Black";
+    font-size: 18px;
+  }
+  .form .signup {
+    height: 35px;
+    width: 92px;
+    border-radius: 4px;
+    background-color: #2f66ee;
+    color: #ffffff;
+    font-family: "Crushy Black";
+    font-size: 18px;
+  }
+  .logoText {
+    margin-left: 10px;
+    font-family: "Crushy Black";
+  }
+
+  .form .login {
+    height: 28px;
+    width: auto;
+    color: #2d200b;
+    font-family: "Crushy Black";
+    font-size: 18px;
+    letter-spacing: 0;
+    line-height: 28px;
+    text-align: center;
+  }
+  .navbar {
+    margin-bottom:40px;
+    background-color: white;
+  }
+  .logo .logoImage{
+    width:"38px" !important;
+    height: 38px !important;
+  }
+}

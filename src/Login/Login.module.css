@@ -1,0 +1,565 @@
+.content {
+    /* height: 415.51px;
+      width: 441px; */
+    padding-left: 30px;
+  }
+  .logoContainer {
+    /* height: 38.51px; */
+    width: 172.5px;
+    display: flex;
+    margin-top: 30px;
+  }
+  .logoText {
+    margin-left: 20px;
+    font-family: "Crushy Black";
+    margin-top: 10px;
+  }
+  .leftHeading p{
+    margin-top: 20px;
+  }
+  .leftHeading {
+    height: auto;
+    width: 300px;
+    color: #9b9b9b;
+    font-family: Montserrat;
+    font-weight: 500;
+    letter-spacing: 0;
+    margin-top: 10px;
+    line-height: 30px;
+  }
+  .signupHeading h3{
+    height: 63px;
+    width: 300px;
+    color: #9b9b9b;
+    font-family: Montserrat;
+    font-weight: 500;
+    letter-spacing: 0;
+    text-align: left;
+    font-size: 20px;
+    margin-bottom: 0px;
+    margin-top: 10px;
+    line-height: 30px;
+  }
+  .error{
+    color: red;
+  }
+  /* .signup{
+    height: 20px;
+  } */
+  .FormContainer {
+    height: auto;
+    width: 330px;
+  }
+  .loginForm input{
+    width: 78% !important;
+  }
+  .loginForm{
+    margin-top: 15px;
+  }
+  .login {
+    
+    height: 40px;
+    width: 120px;
+    border-radius: 4px;
+    font-size: 18px;
+    font-weight: 500;
+    background-color: #4164f3;
+    color: white;
+    margin-top: 60px;
+    border: none;
+    display: block;
+    margin-left: auto;
+      line-height: 28px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin-right: auto;
+  }
+  .inputField {
+    border: none;
+    border-bottom: 1px solid #d8d8d8;
+    outline: 0;
+    background-color: transparent;
+    width: 240px;
+  }
+  .label {
+    color: #9b9b9b;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 0;
+    line-height: 25px;
+    margin-top: 15px;
+  }
+  .checkbox {
+    height: 20px;
+    width: 20px;
+    background-color: #4164f3;
+  }
+  .formText {
+    color: #b5b1bd;
+    font-family: Montserrat;
+    font-size: 15px;
+    font-weight: 500;
+    text-decoration: none;
+    letter-spacing: 0;
+    line-height: 22px;
+  }
+  .formTextRow {
+    color: #b5b1bd;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 0;
+    margin-top: 25px;
+    line-height: 22px;
+  }
+  .rightContent{
+    background-image: url('../assets/otherPages/backgroundRight.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right;
+    border-radius: 20px;
+  }
+  .rightContent {
+    height: auto; 
+  }
+  .dotContainer {
+    height: 91px;
+    width: 167px;
+    position: relative;
+    top: 10%;
+    margin-left: 110px;
+
+  }
+  .dotContainer img{
+    opacity: 0.50;
+    border-radius: 8px;
+  }
+  .rightContentHeading {
+    color: #ffffff;
+    font-family: Roboto;
+    font-size: 42px;
+    width: 290px;
+    margin-top: 100px;
+    font-weight: bold;
+    letter-spacing: 0;
+    margin-left: 45px;
+    line-height: 71px;
+  }
+  .rightContentText {
+    width: 290px;
+    color: #ffffff;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-weight: 500;
+    margin-top: 20px;
+    margin-left: 50px;
+    letter-spacing: 0;
+    line-height: 32px;
+  }
+  .signup {
+    height: 40px;
+    width: 120px;
+    border-radius: 4px;
+    background-color: #ffffff;
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: 500;
+    color: #4164f3;
+    /* margin-left: 50px; */
+    margin-top: 22px;
+    margin-left: 47px;
+    display: block;
+    /* margin-top: 80px; */
+    margin-bottom: 30px;
+    border: none;
+    letter-spacing: 0;
+    line-height: 28px;
+    text-align: center;
+  }
+  .RightLoginButton{
+    height: 40px;
+    width: 120px;
+    border-radius: 4px;
+    background-color: #ffffff;
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: 500;
+    color: #4164f3;
+    margin-left: 50px;
+    margin-top: 40px;
+    border: none;
+    letter-spacing: 0;
+    line-height: 28px;
+    text-align: center;
+  }
+  .logoContainer .logo{
+    width: 30px !important;
+    height: 35px !important;
+  }
+  .bottomRow{
+    margin-top: 20px;
+    margin-bottom: 30px;
+    /* position: fixed;
+    width: 50%;
+    bottom: 30px; */
+  }
+  .CreateAccount{
+    color: #838383;
+  }
+  .bottomLogin{
+  color: #838383;
+  }
+  /* .toggleRightContent{
+   flex-direction: column-reverse;
+  background-color: white;
+  }
+  .toggleLeftContent{
+   flex-direction: column-reverse;
+   background-color: white;
+  } */
+  @media (max-width: 1399.98px) { 
+    .logoContainer .logo{
+      width: 30px !important;
+      height: 35px !important;
+    }
+  }
+  @media (max-width: 1199.98px) {
+    .rightContent {
+      height: 500px;
+      border-radius: 0px 6px 6px 0px;
+      padding-right: 100px;
+      background: linear-gradient(134.71deg, #2f66ee 0%, #5961f9 100%);
+      /* margin-bottom: 100px; */
+    }
+    .logoContainer .logp{
+      width: 30px !important;
+      height: 35px !important;
+    }
+    .bottomRow{
+      margin-top: 40px;
+      margin-bottom: 20px;
+    }
+  }
+  @media (max-width: 991.98px) {
+    .rightContent {
+      margin-left: auto;
+      padding-top: 20px;
+      height: auto;
+      padding-bottom: 20px;
+      border-radius: 0px 6px 6px 0px;
+      background: linear-gradient(134.71deg, #2f66ee 0%, #5961f9 100%);
+    }
+    .dotContainer {
+      height: 91px;
+      width: 167px;
+      position: relative;
+      top: 10%;
+      left: 15%;
+      margin-left: auto;
+      margin-right: auto;
+      opacity: 0.52;
+      background-color: #ffffff;
+    }
+    .rightContentHeading {
+      color: #ffffff;
+      font-family: Roboto;
+      font-size: 34px;
+      width: 290px;
+      height: 46px;
+      margin-top: 100px;
+      font-weight: bold;
+      letter-spacing: 0;
+      margin-left: 45px;
+      line-height: 71px;
+    }
+    .rightContentText {
+      width: 290px;
+      color: #ffffff;
+      font-family: Montserrat;
+      font-size: 20px;
+      font-weight: 500;
+      margin-top: 50px;
+      margin-left: 50px;
+      letter-spacing: 0;
+      line-height: 32px;
+    }
+    .signup {
+      height: 40px;
+      width: 120px;
+      border-radius: 4px;
+      background-color: #ffffff;
+      font-family: Roboto;
+      font-size: 18px;
+      font-weight: 500;
+      color: #4164f3;
+      margin-left: 50px;
+      margin-top: 15px;
+      border: none;
+      letter-spacing: 0;
+      line-height: 28px;
+      text-align: center;
+    }
+    .RightLoginButton{
+      height: 40px;
+      width: 120px;
+      border-radius: 4px;
+      background-color: #ffffff;
+      font-family: Roboto;
+      font-size: 18px;
+      font-weight: 500;
+      color: #4164f3;
+      margin-left: 50px;
+      margin-top: 15px;
+      border: none;
+      letter-spacing: 0;
+      line-height: 28px;
+      text-align: center;
+    }
+    .FormContainer {
+      height: fit-content;
+      width: 330px;
+    }
+    .logoContainer .logo{
+      width: 30px !important;
+      height: 35px !important;
+    }
+  }
+  @media (max-width: 767.98px) {
+    .logoContainer {
+      /* height: 38.51px; */
+      width: 172.5px;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 20px;
+    }
+    .login {
+      height: 40px;
+      width: 100px;
+      border-radius: 4px;
+      background-color: #2f66ee;
+      border: none;
+      margin-bottom: 20px;
+    }
+    .leftHeading h3 {
+      color: #9b9b9b;
+      font-family: Montserrat;
+      font-weight: 500;
+      font-size: 15px;
+      letter-spacing: 0;
+    }
+    .leftHeading {
+      margin-left: auto;
+      margin-right: auto;
+      width: 100%;
+      color: #9b9b9b;
+      font-family: Montserrat;
+      font-weight: 500;
+      margin-top: 15px;
+      height: auto;
+      width: 245px;
+    }
+    .FormContainer {
+      margin-left: auto;
+      margin-right: auto;
+      width: 100%;
+    }
+    .inputField {
+      border: none;
+      border-bottom: 1px solid #d8d8d8;
+      outline: 0;
+      background-color: transparent;
+      width: auto;
+    }
+    .label {
+      color: #9b9b9b;
+      font-family: Montserrat;
+      font-size: 16px;
+      font-weight: 500;
+      letter-spacing: 0;
+      line-height: 25px;
+      margin-top: 5px;
+    }
+    .formTextRow {
+      width:100%;
+      margin-top: 30px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .formText {
+      color: #b5b1bd;
+      font-family: Montserrat;
+      font-size: 9px;
+      font-weight: 500;
+      letter-spacing: 0;
+    }
+    .rightContent {
+      margin-left: auto;
+      margin-right: auto;
+      padding-top: 20px;
+      padding-bottom: 20px;
+      height: fit-content;
+      width: 100%;
+      display: none;
+      border-radius: 0px 0px 32px 32px;
+      background: linear-gradient(134.71deg, #2f66ee 0%, #5961f9 100%);
+    }
+    
+    .content {
+      margin-left: auto;
+      margin-right: auto;
+      width: 100%;
+      padding-left: 0px;
+      text-align: center;
+    }
+    .formColumn{
+      width: 50% !important;
+    }
+    .logoContainer .logo{
+      width: 30px !important;
+      height: 35px !important;
+    }
+    .bottomRow{
+      width: 90%;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 20px;
+      margin-top:0px;
+    }
+    .CreateAccount{
+      color: #838383;
+      font-size: 10px;
+    }
+    .bottomLogin{
+    color: #838383;
+    font-size: 10px;
+    text-align: left;
+    }
+  }
+  @media (max-width: 575.98px) {
+    .logoContainer {
+      /* height: 38.51px; */
+      width: 172.5px;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 20px;
+    }
+    .login {
+      height: 40px;
+      width: 100px;
+      border-radius: 4px;
+      background-color: #2f66ee;
+      border: none;
+      margin-bottom: 20px;
+    }
+    .leftHeading h3 {
+      color: #9b9b9b;
+      font-family: Montserrat;
+      font-weight: 500;
+      font-size: 15px;
+      letter-spacing: 0;
+    }
+    .leftHeading {
+      margin-left: auto;
+      margin-right: auto;
+      width: 90%;
+      color: #9b9b9b;
+      font-family: Montserrat;
+      font-weight: 500;
+      margin-top: 15px;
+      height: auto;
+    }
+    .FormContainer {
+      margin-left: auto;
+      margin-right: auto;
+      width: 100%;
+    }
+    .inputField {
+      border: none;
+      border-bottom: 1px solid #d8d8d8;
+      outline: 0;
+      background-color: transparent;
+      width: auto;
+    }
+    .label {
+      color: #9b9b9b;
+      font-family: Montserrat;
+      font-size: 16px;
+      font-weight: 500;
+      letter-spacing: 0;
+      line-height: 25px;
+      margin-top: 5px;
+    }
+    .formTextRow {
+      width:100%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .formText {
+      color: #b5b1bd;
+      font-family: Montserrat;
+      font-size: 12px;
+      font-weight: 500;
+      letter-spacing: 0;
+    }
+    .rightContent {
+      margin-left: auto;
+      margin-right: auto;
+      padding-top: 20px;
+      padding-bottom: 20px;
+      height: fit-content;
+      width: 100%;
+      display: none;
+      border-radius: 0px 0px 32px 32px;
+      background: linear-gradient(134.71deg, #2f66ee 0%, #5961f9 100%);
+    }
+    .content {
+      margin-left: auto;
+      margin-right: auto;
+      width: 100%;
+      padding-left: 0px;
+      text-align: center;
+    }
+    .formColumn{
+      width: 50% !important;
+    }
+    .logoContainer .logo{
+      width: 30px !important;
+      height: 35px !important;
+    }
+    .signupHeading h3{
+      height: 63px;
+      width: 300px;
+      color: #9b9b9b;
+      font-family: Montserrat;
+      font-weight: 500;
+      text-align: center;
+      font-size: 20px;
+      margin-bottom: 0px;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 10px;
+    }
+    .FormColumn{
+      justify-content: center;
+    }
+    .bottomRow{
+      width: 90%;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 0px;
+      margin-bottom: 20px;
+    }
+    .CreateAccount{
+      color: #838383;
+      text-align: left;
+      width: 50%;
+    }
+    .bottomLogin{
+    color: #838383;
+    text-align: center;
+      width: 50%;
+    }
+  }
+  
