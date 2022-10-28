@@ -15,8 +15,10 @@ import AddLayer from "../Form/AddLayer/AddLayer";
 // import NftGenerate from '../layoutsNft/NftGenerate';
 // import NftGenerate from "../layoutsNft/NftGenerate";
 
-const GetStarted = () => {
+import axios from 'axios'
 
+const GetStarted = () => {
+  const token = localStorage.getItem('token')
   // const [show, setShow] = useState(false);
   const [uploadImage, setUploadImage] = useState(false)
   const [startProject, setStartProject] = useState(false)
@@ -60,10 +62,30 @@ const GetStarted = () => {
   ]
   // const nftImages2 = [
   // ]
+
+
+  const [layerData, setLayerData] = useState([])
+
+  const getLayer = () => {
+    const collectionId = localStorage.getItem('collectionId')
+    axios.get(`https://nftsgenerator.herokuapp.com/api/user/getLayers/${collectionId}`, { headers: { Authorization: `Bearer ${token}` } })
+        .then(res => {
+            setLayerData(res.data.data.layers, "Get layer data nft gen side")
+            // console.log(res.data.data.layers[0],"LayerData")
+            // console.log(res.data.data.layers[0], "nft gen side api get");
+        })
+        .catch(err => {
+            console.log(err)
+        })
+}
+
+
+
+
   return (
     <div className={`container-fluid m-0 ${style.getStarted}`}>
       <AddLayer show={uploadImage} setShow={setUploadImage} />
-      <StartProject show={startProject} setShow={setStartProject} />
+      <StartProject show={startProject} setShow={setStartProject} getLayer={getLayer} setLayerData={setLayerData} layerData={layerData} />
 
       <Navbar />
       <div className={`row m-0 g-0 ${style.customCols} `}>
@@ -109,7 +131,7 @@ const GetStarted = () => {
           </div>
         </div>
         <div className={style.rightBar}>
-          <NftGenerate />
+          <NftGenerate getLayer={getLayer} setLayerData={setLayerData} layerData={layerData} />
         </div>
       </div>
 

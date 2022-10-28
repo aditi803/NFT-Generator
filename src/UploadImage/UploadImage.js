@@ -3,15 +3,17 @@ import Modal from "react-bootstrap/Modal";
 import Button from 'react-bootstrap/Button';
 import axios from 'axios';
 import style from './UploadImage.module.css';
+import Loader from '../loader/index'
 import AddLayer from '../../Form/AddLayer';
 
 const UploadImage = ({ show, setShow,submitHandler}) => {
   const [downloadUrl, setDownloadUrl] = useState()
-  const [file, setFile] = useState(null);
+  const [loader, setLoader] = useState(false);
+  // const [file, setFile] = useState(null);
   const [upload, setUpload] = useState(false);
-  const [download, setDownload] = useState(false);
+  // const [download, setDownload] = useState(false);
   const handleClose = () => setShow(false);
-  const [addLayer, setAddLayer] = useState(false)
+  // const [addLayer, setAddLayer] = useState(false)
  
 
   // const layerId = localStorage.getItem('LayerId')
@@ -48,7 +50,7 @@ const UploadImage = ({ show, setShow,submitHandler}) => {
     link.parentNode.removeChild(link);
   }
 
-  return (
+  return loader ? <Loader /> : (
     <>
       <div>
         <Modal show={show} onHide={handleClose} >
@@ -56,7 +58,7 @@ const UploadImage = ({ show, setShow,submitHandler}) => {
             <h5>Upload Image</h5>
           </Modal.Header>
           <form encType='multipart/form-data' onSubmit={(e)=>{
-            submitHandler(e,setUpload,handleClose)
+            submitHandler(e,setUpload,handleClose, setLoader)
           }}>
             <Modal.Body className={style.uploadBody}>
               <input type="file" name="name" />
@@ -65,7 +67,7 @@ const UploadImage = ({ show, setShow,submitHandler}) => {
               <Button variant="light" onClick={handleClose} className={style.Btn}>
                 Close
               </Button>
-              <Button variant="primary" type="submit" className={style.Btn}>
+              <Button variant="primary" type="submit" className={style.Btn} onClick={() => {setLoader(true)}}>
                 Upload
               </Button>
             </Modal.Footer>

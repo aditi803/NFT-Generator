@@ -37,7 +37,6 @@
     .modal-content {
       margin: 0px;
       max-height: fit-content;
-      border-radius: 27px;
     }
     .modal-header{
       border-bottom: none;
@@ -46,6 +45,9 @@
       border-top: none;
       padding: 10px 10px;
      
+    }
+    .loginModal .modal-content{
+      border-radius: 27px;
     }
     .CreateNft {
       --bs-modal-width: 490px !important;

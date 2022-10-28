@@ -13,8 +13,8 @@ import cross from '../assets/cross.png';
 import axios from "axios"
 import { responseApi } from '../Form/AddLayer/AddLayer';
 
-const NftGenerate = () => {
-    let responseMapp = []
+const NftGenerate = ({ getLayer, setLayerData, layerData }) => {
+    // let responseMapp = []
 
 
     const token = localStorage.getItem('token')
@@ -37,23 +37,6 @@ const NftGenerate = () => {
     }
 
     const [getImageData, setGetImageData] = useState([])
-    // console.log(getImageData,"GetIamge Daya")
-    const [layerData, setLayerData] = useState([])
-
-
-
-    const getLayer = () => {
-        const collectionId = localStorage.getItem('collectionId')
-        axios.get(`https://nftsgenerator.herokuapp.com/api/user/getLayers/${collectionId}`, { headers: { Authorization: `Bearer ${token}` } })
-            .then(res => {
-                setLayerData(res.data.data.layers[0], "Get layer data nft gen side")
-                // console.log(res.data.data.layers[0],"LayerData")
-                console.log(res, "nft gen side api get");
-            })
-            .catch(err => {
-                console.log(err)
-            })
-    }
 
     const getImages = () => {
         const layerId = localStorage.getItem('LayerId')
@@ -67,21 +50,19 @@ const NftGenerate = () => {
             })
     }
 
-    const submitHandler = (e, setUpload, handleClose) => {
-        // console.log("horns sideeee submit");
+    const submitHandler = (e, setUpload, handleClose, setLoader) => {
         e.preventDefault()
         let formData = new FormData(e.target);
         // console.log(formData, "Form Data images")
         const layerId = localStorage.getItem('LayerId')
         axios.post(`https://nftsgenerator.herokuapp.com/api/user/uploadImages/${layerId}`, formData, { headers: { Authorization: `Bearer ${token}` } })
             .then((res) => {
-                console.log(res, "Upload Image response horns side ")
-                // console.log(res.data.data.collection._id, "Collection ID")
+                // console.log(res, "Upload Image response horns side ")
                 setUploadData(res)
-                // localStorage.setItem('collectionID', res.data.data.collection._id)
                 setUpload(false)
                 getImages()
                 handleClose()
+                setLoader(false)
             })
             .catch((err) => {
                 console.log(err)
@@ -90,7 +71,6 @@ const NftGenerate = () => {
 
     return (
         <div className={style.nftGenerate}>
-            {console.log(getImageData, "response mapp")}
             <UploadImage submitHandler={submitHandler} setShow={setShow} show={show} />
             <NftGenerator toggle={toggle} setToggle={setToggle} />
             <AddLayer getLayer={getLayer} show={layer} setShow={setLayer} />
@@ -126,12 +106,12 @@ const NftGenerate = () => {
                             </ul>
                             <div className={style.LayerSettingBottom}>
                                 <div className={style.layerSetting}>
-                                    <button className={style.saveDraft}>
+                                    <div className={style.saveDraft}>
                                         <img className={` mt-1 ${style.arrowImage}`} src={setting} alt="arrow" onClick={() => { setEdit(true) }} />
                                         <button className={` btn btn-primary ${style.generateBtn}`} type='button' onClick={() => handleShow()}>
                                             <span className={style.topBtn}>Generate NFT collection</span>
                                         </button>
-                                    </button>
+                                    </div>
                                 </div>
                                 <div className={style.layerBottomSection}>
                                     <div className={style.setting}>
@@ -231,7 +211,23 @@ const NftGenerate = () => {
                                             <p>Background</p>
                                         </div>
                                     </div>
-                                    <div className={style.baby}>
+                                    {layerData.map((layerData) => (
+                                        <div className={style.baby}>
+                                            <div className={style.rectangle}>
+                                                <div className={style.shape}>
+                                                    <img src={cross} alt="" />
+                                                </div>
+                                                <div className={style.bitmap3}>
+                                                    <img src={backgroundImage} alt="" />
+                                                </div>
+                                            </div>
+                                            <div className={style.preview}>
+                                                <p>{layerData.name}</p>
+                                            </div>
+                                        </div>
+                                    ))}
+
+                                    {/* <div className={style.baby}>
                                         <div className={style.rectangle}>
                                             <div className={style.shape}>
                                                 <img src={cross} alt="" />
@@ -241,48 +237,35 @@ const NftGenerate = () => {
                                             </div>
                                         </div>
                                         <div className={style.preview}>
-                                            <p>Head</p>
+                                            <p>Horns</p>
                                         </div>
-                                    </div>
-                                    <div className={style.baby}>
-                                <div className={style.rectangle}>
-                                    <div className={style.shape}>
-                                        <img src={cross} alt="" />
-                                    </div>
-                                    <div className={style.bitmap3}>
-                                        <img src={backgroundImage} alt="" />
-                                    </div>
-                                </div>
-                                <div className={style.preview}>
-                                    <p>Horns</p>
-                                </div>
-                            </div>
-                            <div className={style.baby}>
-                                <div className={style.rectangle}>
-                                    <div className={style.shape}>
-                                        <img src={cross} alt="" />
-                                    </div>
-                                    <div className={style.bitmap3}>
-                                        <img src={backgroundImage} alt="" />
-                                    </div>
-                                </div>
-                                <div className={style.preview}>
-                                    <p>Body</p>
-                                </div>
-                            </div>
-                            <div className={style.baby}>
-                                <div className={style.rectangle}>
-                                    <div className={style.shape}>
-                                        <img src={cross} alt="" />
-                                    </div>
-                                    <div className={style.bitmap3}>
-                                        <img src={backgroundImage} alt="" />
-                                    </div>
-                                </div>
-                                <div className={style.preview}>
-                                    <p>Body</p>
-                                </div>
-                            </div>
+                                    </div> */}
+                                    {/* <div className={style.baby}>
+                                        <div className={style.rectangle}>
+                                            <div className={style.shape}>
+                                                <img src={cross} alt="" />
+                                            </div>
+                                            <div className={style.bitmap3}>
+                                                <img src={backgroundImage} alt="" />
+                                            </div>
+                                        </div>
+                                        <div className={style.preview}>
+                                            <p>Body</p>
+                                        </div>
+                                    </div> */}
+                                    {/* <div className={style.baby}>
+                                        <div className={style.rectangle}>
+                                            <div className={style.shape}>
+                                                <img src={cross} alt="" />
+                                            </div>
+                                            <div className={style.bitmap3}>
+                                                <img src={backgroundImage} alt="" />
+                                            </div>
+                                        </div>
+                                        <div className={style.preview}>
+                                            <p>Body</p>
+                                        </div>
+                                    </div> */}
                                 </div>
 
 

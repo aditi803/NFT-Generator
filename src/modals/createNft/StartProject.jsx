@@ -9,7 +9,7 @@ import style from './StartProject.module.css'
 import axios from 'axios';
 import AddLayer from '../../Form/AddLayer/AddLayer';
 // import UploadImage from '../../modals/UploadImage/UploadImage';
-const StartProject = ({ show, setShow }) => {
+const StartProject = ({ show, setShow , getLayer, setLayerData, layerData}) => {
 
     const [layer, setLayer] = useState(true);
     const [name, setName] = useState("")
@@ -77,7 +77,7 @@ const StartProject = ({ show, setShow }) => {
                 </Modal>
                 :
                 <>
-                    <AddLayer setShow={setShow} show={show} name={name} />
+                    <AddLayer setShow={setShow} show={show} getLayer={getLayer}  />
                 </>
             }
         </div>

@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import style from './AddLayer.module.css'
 import { useFormik } from "formik";
 // import Modal from 'react-bootstrap/Modal';
@@ -13,8 +13,11 @@ export let responseApi
 
 // export let layerGetApi
 
-const AddLayer = ({ getLayer , setShow, show, name }) => {
+const AddLayer = (props) => {
+    // console.log(props, '123456789')
+    const { getLayer , setShow, show} = props;
     const token = localStorage.getItem('token')
+    // getLayer()
 
 
     const [layer, setLayer] = useState('')
@@ -28,22 +31,6 @@ const AddLayer = ({ getLayer , setShow, show, name }) => {
         layer: Yup.string()
             .required("*Required")
     })
-    // const [layerData, setLayerData] = useState([])
-    // console.log(layerData, "LAyer DFasta kjhhjgfhds")
-    // layerGetApi = layerData
-    // console.log(layerGetApi,"kljhgfdsadfghjkl;kjgfdzXcvbnm,.")
-    // const getLayer = () => {
-    //     const collectionId = localStorage.getItem('collectionId')
-    //     axios.get(`https://nftsgenerator.herokuapp.com/api/user/getLayers/${collectionId}`,{ headers: { Authorization: `Bearer ${token}` } })
-    //     .then(res => {
-    //         setLayerData(res.data.data.layers[0], "Get layer data")
-    //         // console.log(res.data.data.layers[0],"LayerData")
-    //     })
-    //     .catch(err => {
-    //         console.log(err)
-    //     })
-    // }
-    //  getLayer()
 
     const onSubmit = () => {
         const collectionId = localStorage.getItem('collectionId')
@@ -61,12 +48,17 @@ const AddLayer = ({ getLayer , setShow, show, name }) => {
                 localStorage.setItem('LayerId', res.data.data.layer._id)
                 setShow(false)
                 formik.resetForm()
-                getLayer()
+                // setTimeout(() => {
+                props.getLayer()
+                // }, 1000)
             })
             .catch((err) => {
                 console.log(err)
             })
     }
+    // useEffect(() => {
+    //     props.getLayer()
+    // }, []);
 
 
     const formik = useFormik({
@@ -108,7 +100,7 @@ const AddLayer = ({ getLayer , setShow, show, name }) => {
                         <Button variant="light" onClick={handleClose} className={style.Btn}>
                             Cancel
                         </Button>
-                        <Button variant="primary" className={style.Btn} type='submit'>
+                        <Button variant="primary" className={style.Btn} type='submit' onClick={(e) =>props.getLayer(e)}>
                             Add Layer
                         </Button>
                     </Modal.Footer>
