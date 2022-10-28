@@ -63,6 +63,7 @@ const NftGenerate = ({ getLayer, setLayerData, layerData }) => {
                 getImages()
                 handleClose()
                 setLoader(false)
+                localStorage.removeItem('LayerId')
             })
             .catch((err) => {
                 console.log(err)
@@ -73,7 +74,7 @@ const NftGenerate = ({ getLayer, setLayerData, layerData }) => {
         <div className={style.nftGenerate}>
             <UploadImage submitHandler={submitHandler} setShow={setShow} show={show} />
             <NftGenerator toggle={toggle} setToggle={setToggle} />
-            <AddLayer getLayer={getLayer} show={layer} setShow={setLayer} />
+            <AddLayer getLayer={getLayer} show={layer} setShow={setLayer}/>
             <EditData show={edit} setShow={setEdit} />
             <div className='container p-0 h-100'>
                 <div className='row p-0'>
