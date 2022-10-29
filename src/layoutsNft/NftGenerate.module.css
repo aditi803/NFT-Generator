@@ -320,6 +320,19 @@ span.uploadImage{
     border: 1px dashed #979797;
     opacity: 0.53;
   }
+  .rectangle:active{
+    box-shadow: 0px 6px 13px 20px rgb(199 187 199);
+  }
+  .rectangle:focus{
+    box-shadow: 0px 6px 13px 20px rgb(199 187 199);
+  }
+  .rectangle:visited{
+    box-shadow: 0px 6px 13px 20px rgb(199 187 199);
+  }
+  .rectangle:target{
+    box-shadow: 0px 6px 13px 20px rgb(199 187 199);
+  }
+  
   .rectangle1 {
     box-sizing: border-box;
     height: 60.71px;

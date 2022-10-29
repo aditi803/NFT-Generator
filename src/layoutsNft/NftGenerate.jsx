@@ -149,7 +149,7 @@ const NftGenerate = ({ getLayer, setLayerData, layerData }) => {
                                     </div>
                                     <hr className={style.bottomRight}></hr>
                                     <div className={style.raritySettingSet}>
-                                        <img src={backgroundImage} alt="background-image" />
+                                        <img src={backgroundImage} alt="background" />
                                         <div style={{ width: "310px", marginRight: "30px" }}>
                                             <Slider
                                                 size="small"
@@ -164,7 +164,7 @@ const NftGenerate = ({ getLayer, setLayerData, layerData }) => {
                                     </div>
                                     <hr className={style.bottomRight}></hr>
                                     <div className={style.raritySettingSet}>
-                                        <img src={backgroundImage} alt="background-image" />
+                                        <img src={backgroundImage} alt="background" />
                                         <div style={{ width: "310px", marginRight: "30px" }}>
                                             <Slider
                                                 size="small"
@@ -179,7 +179,7 @@ const NftGenerate = ({ getLayer, setLayerData, layerData }) => {
                                     </div>
                                     <hr className={style.bottomRight}></hr>
                                     <div className={style.raritySettingSet}>
-                                        <img src={backgroundImage} alt="background-image" />
+                                        <img src={backgroundImage} alt="background" />
                                         <div style={{ width: "310px", marginRight: "30px" }}>
                                             <Slider
                                                 size="small"
@@ -244,49 +244,7 @@ const NftGenerate = ({ getLayer, setLayerData, layerData }) => {
                                             </div>
                                         </div>
                                     ))}
-
-                                    {/* <div className={style.baby}>
-                                        <div className={style.rectangle}>
-                                            <div className={style.shape}>
-                                                <img src={cross} alt="" />
-                                            </div>
-                                            <div className={style.bitmap3}>
-                                                <img src={backgroundImage} alt="" />
-                                            </div>
-                                        </div>
-                                        <div className={style.preview}>
-                                            <p>Horns</p>
-                                        </div>
-                                    </div> */}
-                                    {/* <div className={style.baby}>
-                                        <div className={style.rectangle}>
-                                            <div className={style.shape}>
-                                                <img src={cross} alt="" />
-                                            </div>
-                                            <div className={style.bitmap3}>
-                                                <img src={backgroundImage} alt="" />
-                                            </div>
-                                        </div>
-                                        <div className={style.preview}>
-                                            <p>Body</p>
-                                        </div>
-                                    </div> */}
-                                    {/* <div className={style.baby}>
-                                        <div className={style.rectangle}>
-                                            <div className={style.shape}>
-                                                <img src={cross} alt="" />
-                                            </div>
-                                            <div className={style.bitmap3}>
-                                                <img src={backgroundImage} alt="" />
-                                            </div>
-                                        </div>
-                                        <div className={style.preview}>
-                                            <p>Body</p>
-                                        </div>
-                                    </div> */}
                                 </div>
-
-
                                 <div className='col-4'>
                                     <div className={style.layerBaby}>
                                         <div className={style.addLayer}>
