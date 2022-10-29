@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import style from './NftGenerate.module.css';
 import { AiOutlinePlus } from 'react-icons/ai';
 import UploadImage from '../modals/UploadImage/UploadImage';
@@ -13,8 +13,23 @@ import cross from '../assets/cross.png';
 import axios from "axios"
 import { responseApi } from '../Form/AddLayer/AddLayer';
 
+import { useLayer } from '../context/LayerContext';
+
+
 const NftGenerate = ({ getLayer, setLayerData, layerData }) => {
     // let responseMapp = []
+
+
+    // Layer Id data from layer context
+    const {layerId, setLayerId} = useLayer();
+
+
+    useEffect(() => {
+        // Fetching other layer images when LayerId changes
+        if(layerId){
+            getImages()
+        }
+    }, [layerId])
 
 
     const token = localStorage.getItem('token')
@@ -39,7 +54,7 @@ const NftGenerate = ({ getLayer, setLayerData, layerData }) => {
     const [getImageData, setGetImageData] = useState([])
 
     const getImages = () => {
-        const layerId = localStorage.getItem('LayerId')
+        // const layerId = localStorage.getItem('LayerId')
         axios.get(`https://nftsgenerator.herokuapp.com/api/user/getImages/${layerId}`, { headers: { Authorization: `Bearer ${token}` } })
             .then((res) => {
                 setGetImageData(res.data.data.Images)
@@ -54,7 +69,7 @@ const NftGenerate = ({ getLayer, setLayerData, layerData }) => {
         e.preventDefault()
         let formData = new FormData(e.target);
         // console.log(formData, "Form Data images")
-        const layerId = localStorage.getItem('LayerId')
+        // const layerId = localStorage.getItem('LayerId')
         axios.post(`https://nftsgenerator.herokuapp.com/api/user/uploadImages/${layerId}`, formData, { headers: { Authorization: `Bearer ${token}` } })
             .then((res) => {
                 // console.log(res, "Upload Image response horns side ")
@@ -63,7 +78,7 @@ const NftGenerate = ({ getLayer, setLayerData, layerData }) => {
                 getImages()
                 handleClose()
                 setLoader(false)
-                localStorage.removeItem('LayerId')
+                // localStorage.removeItem('LayerId')
             })
             .catch((err) => {
                 console.log(err)
@@ -213,7 +228,9 @@ const NftGenerate = ({ getLayer, setLayerData, layerData }) => {
                                         </div>
                                     </div>
                                     {layerData.map((layerData) => (
-                                        <div className={style.baby}>
+                                        <div className={style.baby} key={layerData._id} onClick={() => {
+                                            setLayerId(layerData._id)
+                                        }}>
                                             <div className={style.rectangle}>
                                                 <div className={style.shape}>
                                                     <img src={cross} alt="" />

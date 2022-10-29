@@ -9,11 +9,17 @@ import Modal from "react-bootstrap/Modal";
 import Button from 'react-bootstrap/Button';
 import UploadImage from '../../modals/UploadImage/UploadImage';
 
+import { useLayer } from '../../context/LayerContext';
+
 export let responseApi
 
 // export let layerGetApi
 
 const AddLayer = (props) => {
+    const {layerId, setLayerId} = useLayer();
+
+
+
     // console.log(props, '123456789')
     const { getLayer , setShow, show} = props;
     const token = localStorage.getItem('token')
@@ -45,7 +51,8 @@ const AddLayer = (props) => {
                 setResApi(res)
                 // console.log("meeeeeee");
                 // console.log(res.data.data.layer._id, "Layer id")
-                localStorage.setItem('LayerId', res.data.data.layer._id)
+                localStorage.setItem('LayerId', res.data.data.layer._id) // Not in use for R.B
+                setLayerId(res.data.data.layer._id)
                 setShow(false)
                 formik.resetForm()
                 // setTimeout(() => {
