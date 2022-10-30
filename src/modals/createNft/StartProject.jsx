@@ -11,7 +11,7 @@ import AddLayer from '../../Form/AddLayer/AddLayer';
 
 import { useLayer } from '../../context/LayerContext';
 import useLoader from './../../hooks/useLoader'
-
+import {toast} from 'react-toastify'
 
 // import UploadImage from '../../modals/UploadImage/UploadImage';
 const StartProject = ({ show, setShow , getLayer, setLayerData, layerData}) => {
@@ -46,6 +46,7 @@ const StartProject = ({ show, setShow , getLayer, setLayerData, layerData}) => {
             })
             .catch((err) => {
                 console.log(err, '>>>>>>>>>>>>>>>>>>>')
+                toast.error(err?.response?.data?.message ?? "Something went wrong!" );
             }).finally(() => {
                 setLoader(false);
             })

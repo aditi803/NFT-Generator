@@ -8,7 +8,7 @@ import axios from "axios";
 import Modal from "react-bootstrap/Modal";
 import Button from "react-bootstrap/Button";
 import UploadImage from "../../modals/UploadImage/UploadImage";
-
+import { toast } from 'react-toastify'
 import { useLayer } from "../../context/LayerContext";
 import useLoader from "../../hooks/useLoader";
 
@@ -66,10 +66,12 @@ const AddLayer = (props) => {
       })
       .catch((err) => {
         console.log(err);
+        toast.error(err?.response?.data?.message ?? "Something went wrong!", );
+        setLoader(false)
       })
       .finally(() => {
         // hideLoader();
-        setLoader(false)
+        // setLoader(false)
       });
   };
   // useEffect(() => {
