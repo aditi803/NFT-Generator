@@ -5,7 +5,10 @@ import axios from 'axios';
 import style from './UploadImage.module.css';
 import AddLayer from '../../Form/AddLayer/AddLayer';
 
+import { useLayer } from '../../context/LayerContext';
+
 const UploadImage = ({ show, setShow,submitHandler}) => {
+  const {layerId, setLayerId, loader, setLoader} = useLayer();
   const [downloadUrl, setDownloadUrl] = useState()
   const [file, setFile] = useState(null);
   const [upload, setUpload] = useState(false);

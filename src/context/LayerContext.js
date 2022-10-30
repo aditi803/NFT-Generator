@@ -4,7 +4,9 @@ const LayerContext = createContext();
 
 export const LayerProvider = ({children}) => {
     const [layerId, setLayerId] =useState('');
-    const value = {layerId, setLayerId}
+    const [collectionId, setCollectionId] =useState('');
+    const [loader, setLoader] = useState(false) 
+    const value = {layerId, setLayerId, collectionId, setCollectionId, loader, setLoader}
 
     return <LayerContext.Provider value={value}>{children}</LayerContext.Provider>
 }

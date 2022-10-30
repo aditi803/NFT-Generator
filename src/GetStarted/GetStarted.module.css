@@ -1,44 +1,44 @@
-.getStarted{
+.getStarted {
   padding: 2px 110px 0px 110px;
 }
-.ActiveButton{
-    background-color: #EAEAEA;
-    padding: 12px 0px 1px 0px;
-    text-align: center;
-    font-size: 14px;
-    line-height: 16px;
-    font-weight: 500;
-    color: #000000;
+.ActiveButton {
+  background-color: #eaeaea;
+  padding: 12px 0px 1px 0px;
+  text-align: center;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 500;
+  color: #000000;
 }
-.sideButtom{
+.sideButtom {
   width: 118px;
   height: 18px;
 }
-.customCols .col-md-2{
+.customCols .col-md-2 {
   flex: 0 0 auto !important;
   width: 10.666667% !important;
 }
-.customCols .col-md-3{
+.customCols .col-md-3 {
   flex: 0 0 auto !important;
   width: 18% !important;
 }
-.ActiveButton p{
+.ActiveButton p {
   font-weight: 500;
 }
-.rightSectionNft{
+.rightSectionNft {
   /* background-color: red; */
 }
-.customButton{
-    /* width:75%; */
-    /* height: 85px; */
-    margin-top: 27px;
-    padding:8;
-    text-align: center;
+.customButton {
+  /* width:75%; */
+  /* height: 85px; */
+  margin-top: 27px;
+  padding: 8;
+  text-align: center;
 }
-.customButton p{
+.customButton p {
   color: gray;
 }
-.bottomRow{
+.bottomRow {
   margin-left: -14px;
 }
 .inputContainer {
@@ -47,117 +47,115 @@
   /* width: 95%; */
   margin-bottom: 15px;
 }
-.inputContainer input{
+.inputContainer input {
   padding-left: 33px;
-    margin-top: 21px;
-    box-sizing: border-box;
+  margin-top: 21px;
+  box-sizing: border-box;
   height: 40px;
   width: 240px;
-  border: 1px solid #EAEAEA !important;
+  border: 1px solid #eaeaea !important;
   border-radius: 6px;
-  background-color: #FAFAFA !important;
+  background-color: #fafafa !important;
   color: #c1c1c1 !important;
   letter-spacing: 0;
   line-height: 13px;
   font-size: 12px;
 }
-.inputContainer img{
+.inputContainer img {
   position: absolute;
   top: 23%;
-    left: 2%;
-    width: 20px;
-    height: 23px;
+  left: 2%;
+  width: 20px;
+  height: 23px;
 }
-.nftImages{
+.nftImages {
   width: 133px;
   height: 133px;
 }
-.bottomContainer{
+.bottomContainer {
   position: relative;
   height: 120px;
   padding-bottom: 0px;
 }
-.content{
+.content {
   position: absolute;
   display: flex;
 }
-.container{
+.container {
   width: 120px;
   height: auto;
   margin-right: 10px;
   text-align: center;
 }
-.bottomimage{
+.bottomimage {
   width: 100px;
   height: 100px;
- 
 }
-.removeIcon{
+.removeIcon {
   position: absolute;
   top: 1%;
   left: 11%;
-  color:white;
+  color: white;
   font-size: 18px;
   padding: 5px 5px;
   background-color: red;
   border-radius: 50%;
 }
-.removeIcon2{
+.removeIcon2 {
   position: absolute;
   top: 1%;
   left: 28%;
-  color:white;
+  color: white;
   font-size: 18px;
   padding: 5px 5px;
   background-color: red;
   border-radius: 50%;
 }
-.removeIcon3{
+.removeIcon3 {
   position: absolute;
   top: 1%;
-  left:45%;
-  color:white;
+  left: 45%;
+  color: white;
   font-size: 18px;
   padding: 5px 5px;
   background-color: red;
   border-radius: 50%;
 }
-.removeIcon4{
+.removeIcon4 {
   position: absolute;
   top: 1%;
   left: 62%;
-  color:white;
+  color: white;
   font-size: 18px;
   padding: 5px 5px;
   background-color: red;
   border-radius: 50%;
 }
-.removeIcon5{
+.removeIcon5 {
   position: absolute;
   top: 1%;
   left: 80%;
-  color:white;
+  color: white;
   font-size: 18px;
   padding: 5px 5px;
   background-color: red;
   border-radius: 50%;
 }
 
-
-.SearchIcon{
-    height: 1.5rem;
-    width: 1.5rem;
-    padding: 4px;
-    position: absolute;
-    box-sizing:border-box;
-    top:50%;
-    left:69%;
-    /* font-weight: 200; */
-    transform: translateY(-50%);
+.SearchIcon {
+  height: 1.5rem;
+  width: 1.5rem;
+  padding: 4px;
+  position: absolute;
+  box-sizing: border-box;
+  top: 50%;
+  left: 69%;
+  /* font-weight: 200; */
+  transform: translateY(-50%);
 }
 .inputField {
-    height: 50px;
-  box-sizing:border-box;
+  height: 50px;
+  box-sizing: border-box;
   padding-left: 1.5rem;
 }
 
@@ -165,113 +163,112 @@
     color:red;
     padding-left: 100px;
   } */
-  .imageContainer{
-    background-color:#f0f0f0;
-    /* margin-left: 20px; */
-    height:100vh;
-    position: relative;
-  }
-  .headingContainer{
-    text-align: right;
-  
-  }
-  .settingIcon{
-    font-size: 20px;
-  }
-  /* .imageWrapper img{
+.imageContainer {
+  background-color: #f0f0f0;
+  /* margin-left: 20px; */
+  height: 100vh;
+  position: relative;
+}
+.headingContainer {
+  text-align: right;
+}
+.settingIcon {
+  font-size: 20px;
+}
+/* .imageWrapper img{
     height: 117px;
     width: 124px;
   } */
-  .imageContainer img{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    width: 280px;
-    height: 350px;
-  }
-  .nftRow{
-    width:100%;
-    border: 1px solid #dedede;
-  }
-  .nftContainer{
-    width: 116px;
-    height: 115px;
-    margin-top: 6px;
-    margin-bottom: 18px;
-    background-color: #EAEAEA;
-    padding: 10px 5px;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    place-content: center;
-    align-items: center;
-  }
-  .addIcon{
-    font-size: 26px;
-  }
-  .leftSection{
-    margin-top: 10px;
+.imageContainer img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 280px;
+  height: 350px;
 }
-ul .leftSection{
-    list-style: none;
-    margin: 0px;
-    padding: 0px;
-    display: flex;
-    flex-wrap: wrap;
+.nftRow {
+  width: 100%;
+  border: 1px solid #dedede;
 }
-.sideBar{
+.nftContainer {
+  width: 116px;
+  height: 115px;
+  margin-top: 6px;
+  margin-bottom: 18px;
+  background-color: #eaeaea;
+  padding: 10px 5px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  place-content: center;
+  align-items: center;
+}
+.addIcon {
+  font-size: 26px;
+}
+.leftSection {
+  margin-top: 10px;
+}
+ul .leftSection {
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.sideBar {
   /* background-color: red; */
   /* width: 11% !important; */
   width: 125px;
   /* height: 959px; */
 }
-.bottomBar{
+.bottomBar {
   /* width: 22% !important; */
   /* height: 944px; */
   width: 273px;
   background-color: #ffffff;
 }
 
-.rightBar{
+.rightBar {
   width: 66%;
 }
-.leftSection li{
-    float: left;
-    text-align: center;
-    width:44.5% ;
-    /* border-radius: 8px; */
-    margin-bottom: 11px !important;
-    /* margin-right: 8px; */
-    height: 110px;
-    list-style: none;
-    /* margin-bottom: 10px; */
+.leftSection li {
+  float: left;
+  text-align: center;
+  width: 44.5%;
+  /* border-radius: 8px; */
+  margin-bottom: 11px !important;
+  /* margin-right: 8px; */
+  height: 110px;
+  list-style: none;
+  /* margin-bottom: 10px; */
 }
-.leftSection li a{
-    text-decoration: none;
+.leftSection li a {
+  text-decoration: none;
 }
-.leftSection a{
-    background-color: transparent;
-    color: #007bff;
+.leftSection a {
+  background-color: transparent;
+  color: #007bff;
 }
-span .imageWrapper{
-    height: 175px;
-    width: 100%;
-    display: block;
-    position: relative;
-    cursor: pointer;
-    visibility: hidden !important;
-    margin-right: 0px;
+span .imageWrapper {
+  height: 175px;
+  width: 100%;
+  display: block;
+  position: relative;
+  cursor: pointer;
+  visibility: hidden !important;
+  margin-right: 0px;
 }
-.inputField{
+.inputField {
   background-color: #f8f8f8 !important;
   border: 1px solid #ddd !important;
   color: #ddd !important;
 }
-.form-control{
+.form-control {
   width: 75% !important;
 }
-.customLayer{
+.customLayer {
   animation-duration: 1s;
   text-align: center;
   padding: 4px;
@@ -287,66 +284,66 @@ span .imageWrapper{
   flex-direction: column;
   justify-content: center;
 }
- .customLayer img{
-    width: 30px;
-    margin-top: 23px !important;
-    vertical-align: middle;
-    border-style: none;
+.customLayer img {
+  width: 30px;
+  margin-top: 23px !important;
+  vertical-align: middle;
+  border-style: none;
 }
 
-.addPhoto{
-    /* width: 140px; */
-    font-weight: 400;
-    color: #47494E;
-    text-align: center;
-    font-size: 14px;
-    font-family: 'Poppins', sans-serif;
-    /* margin: 18px 0px 0px; */
-    position: relative !important;
-    display:  block;
-    
-    /* margin-top: 10px; */
-} 
-.imageWrapper img{
+.addPhoto {
+  /* width: 140px; */
+  font-weight: 400;
+  color: #47494e;
+  text-align: center;
+  font-size: 14px;
+  font-family: "Poppins", sans-serif;
+  /* margin: 18px 0px 0px; */
+  position: relative !important;
+  display: block;
+
+  /* margin-top: 10px; */
+}
+.imageWrapper img {
   width: 104px;
-    height: 110px;
-    margin-top: 5px;
-    object-fit: cover;
-    margin-right: 0px;
-    /* border: 1px solid #ddd; */
-    /* border: 5px solid transparent !important; */
-    /* transition: 0.5 all ease !important; */
+  height: 110px;
+  margin-top: 5px;
+  object-fit: cover;
+  margin-right: 0px;
+  /* border: 1px solid #ddd; */
+  /* border: 5px solid transparent !important; */
+  /* transition: 0.5 all ease !important; */
 }
-.imageWrapper img:hover{
+.imageWrapper img:hover {
   border: 5px solid blue;
 }
-.imageWrapper img:active{
+.imageWrapper img:active {
   border: 5px solid blue;
 }
-.imageWrapper img:focus{
+.imageWrapper img:focus {
   border: 5px solid blue;
 }
 
-.imageWrapper .name{
-    background: #f4f4f4;
-    color: #333;
-    padding: 8px 0px;
-    border-bottom-left-radius: 8px;
-    border-bottom-right-radius: 8px;
+.imageWrapper .name {
+  background: #f4f4f4;
+  color: #333;
+  padding: 8px 0px;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
 }
-  .heading{
-    text-align: left;
-    font-size: 15px;
-    padding: 7px 20px;
-    height: 16px;
-    color: #030815;
-    font-weight: 400;
-    font-family: 'poppins', sans-serif;
-    font-size: 14px;
-    letter-spacing: 0;
-    line-height: 16px;
-  }
-.uploadImage{
+.heading {
+  text-align: left;
+  font-size: 15px;
+  padding: 7px 20px;
+  height: 16px;
+  color: #030815;
+  font-weight: 400;
+  font-family: "poppins", sans-serif;
+  font-size: 14px;
+  letter-spacing: 0;
+  line-height: 16px;
+}
+.uploadImage {
   /* position: absolute; */
   display: flex;
   top: calc(50% - 50px);
@@ -361,83 +358,80 @@ span .imageWrapper{
   background-color: white;
   opacity: 75%;
 }
-.addLayer{
+.addLayer {
   width: 70px;
   height: 70px;
   border-radius: 50%;
-  background-color:#EAEAEA;
+  background-color: #eaeaea;
   display: flex;
   align-items: center;
   justify-content: center;
   margin: 20px;
 }
-  @media (max-width: 1399.98px) { 
+@media (max-width: 1399.98px) {
+}
 
-   }
-
-  @media (max-width: 1199.98px) { 
-    .ActiveButton{
-      /* height: 93px;
+@media (max-width: 1199.98px) {
+  .ActiveButton {
+    /* height: 93px;
       width: 128px; */
-      background-color: #EAEAEA;
-      padding:20px 20px ;
-      margin:20px 0px 20px 0px;
-      text-align: center;
+    background-color: #eaeaea;
+    padding: 20px 20px;
+    margin: 20px 0px 20px 0px;
+    text-align: center;
   }
-  .nftRow{
-    width:90%;
-    height:auto;
+  .nftRow {
+    width: 90%;
+    height: auto;
   }
-  .SearchIcon{
+  .SearchIcon {
     height: 1.5rem;
     width: 1.5rem;
     padding: 4px;
     position: absolute;
-    box-sizing:border-box;
-    top:50%;
-    left:69% !important;
+    box-sizing: border-box;
+    top: 50%;
+    left: 69% !important;
     transform: translateY(-50%);
-}
-  .imageHeading{
+  }
+  .imageHeading {
     font-size: 12px;
   }
-  .customButton{
-      height: 93px;
-      padding:20px 20px ;
-      text-align:center;
-      
-  }
-  .row{
+  .customButton {
+    height: 93px;
+    padding: 20px 20px;
     text-align: center;
   }
-  .heading{
+  .row {
+    text-align: center;
+  }
+  .heading {
     font-size: 20px;
     padding: 10px 10px;
     text-align: left;
   }
-  .imageContainer{
-    background-color:#f0f0f0;
-    height:500px;
+  .imageContainer {
+    background-color: #f0f0f0;
+    height: 500px;
   }
-  .headingContainer{
+  .headingContainer {
     text-align: center;
-  
   }
-  .image{
+  .image {
     width: 90px;
     height: 90px;
   }
-  .nftContainer{
+  .nftContainer {
     width: 73px;
-    height:83px;
+    height: 83px;
     margin: 3px;
-    background-color: #EAEAEA;
+    background-color: #eaeaea;
     padding: 5px 5px;
     text-align: center;
     margin-left: 3px;
     margin-right: auto;
   }
-  .container{
+  .container {
     height: auto;
     margin-left: auto;
     margin-right: auto;
@@ -445,125 +439,122 @@ span .imageWrapper{
     margin-bottom: 20px;
     text-align: center;
   }
-  .bottomimage{
+  .bottomimage {
     width: 100px;
     height: 100px;
-   
   }
-  .bottomContainer{
+  .bottomContainer {
     height: auto;
   }
-  .removeIcon{
+  .removeIcon {
     position: absolute;
     top: 1%;
     left: 11%;
-    color:white;
+    color: white;
     font-size: 24px;
     padding: 5px 5px;
     background-color: red;
     border-radius: 50%;
   }
-  .removeIcon2{
+  .removeIcon2 {
     position: absolute;
     top: 7%;
     left: 27%;
-    color:white;
+    color: white;
     font-size: 24px;
     padding: 5px 5px;
     background-color: red;
     border-radius: 50%;
   }
-  .removeIcon3{
+  .removeIcon3 {
     position: absolute;
     top: 7%;
-    left:44%;
-    color:white;
+    left: 44%;
+    color: white;
     font-size: 24px;
     padding: 5px 5px;
     background-color: red;
     border-radius: 50%;
   }
-  .removeIcon4{
+  .removeIcon4 {
     position: absolute;
     top: 7%;
-    left:61%;
-    color:white;
+    left: 61%;
+    color: white;
     font-size: 24px;
     padding: 5px 5px;
     background-color: red;
     border-radius: 50%;
   }
-  .removeIcon5{
+  .removeIcon5 {
     position: absolute;
     top: 7%;
     left: 68%;
-    color:white;
-    font-size:24px;
+    color: white;
+    font-size: 24px;
     padding: 5px 5px;
     background-color: red;
     border-radius: 50%;
   }
-   }
+}
 
-  @media (max-width: 991.98px) { 
-    .imageHeading{
-      font-size:9px;
-    }
-    .SearchIcon{
-      height: 1.5rem;
-      width: 1.5rem;
-      padding: 4px;
-      position: absolute;
-      box-sizing:border-box;
-      top:50%;
-      left:73%;
-      transform: translateY(-50%);
+@media (max-width: 991.98px) {
+  .imageHeading {
+    font-size: 9px;
   }
-    .ActiveButton{
-      /* height: 93px;
+  .SearchIcon {
+    height: 1.5rem;
+    width: 1.5rem;
+    padding: 4px;
+    position: absolute;
+    box-sizing: border-box;
+    top: 50%;
+    left: 73%;
+    transform: translateY(-50%);
+  }
+  .ActiveButton {
+    /* height: 93px;
       width: 128px; */
-      background-color: #EAEAEA;
-      padding:20px 20px ;
-      margin:20px 0px 20px 0px;
-      text-align: center;
-  }
-  .customButton{
-      height: 93px;
-      padding:20px 20px ;
-      text-align:center;
-      
-  }
-  .row{
+    background-color: #eaeaea;
+    padding: 20px 20px;
+    margin: 20px 0px 20px 0px;
     text-align: center;
   }
-  .heading{
+  .customButton {
+    height: 93px;
+    padding: 20px 20px;
+    text-align: center;
+  }
+  .row {
+    text-align: center;
+  }
+  .heading {
     font-size: 20px;
     padding: 10px 10px;
     text-align: center;
   }
-  .imageContainer{
-    background-color:#f0f0f0;
-    height:500px;
+  .imageContainer {
+    background-color: #f0f0f0;
+    height: 500px;
   }
-  .headingContainer{
+  .headingContainer {
     text-align: center;
-  
   }
-  .image{
+  .image {
     width: 70px;
     height: 80px;
   }
-  .nftContainer{
+  .nftContainer {
     width: 61px;
-    height:63px;
+    height: 63px;
     margin: 8px;
-    background-color: #EAEAEA;
+    background-color: #eaeaea;
     padding: 5px 5px;
     text-align: center;
     margin-left: auto;
     margin-right: auto;
   }
-  .container{
+  .container {
     height: auto;
     /* margin-left: auto;
     margin-right: auto; */
@@ -571,130 +562,127 @@ span .imageWrapper{
     margin-bottom: 20px;
     text-align: center;
   }
-  .bottomimage{
+  .bottomimage {
     width: 70px;
     height: 80px;
   }
-  .content{
+  .content {
     position: absolute;
-    display:flex;
+    display: flex;
     width: 80%;
-
   }
-  .removeIcon{
+  .removeIcon {
     position: absolute;
     top: 1%;
     left: 10%;
-    color:white;
+    color: white;
     font-size: 18px;
     padding: 5px 5px;
     background-color: red;
     border-radius: 50%;
   }
-  .removeIcon2{
+  .removeIcon2 {
     position: absolute;
     top: 10%;
     left: 30%;
-    color:white;
+    color: white;
     font-size: 18px;
     padding: 5px 5px;
     background-color: red;
     border-radius: 50%;
   }
-  .removeIcon3{
+  .removeIcon3 {
     position: absolute;
     top: 10%;
-    left:50%;
-    color:white;
+    left: 50%;
+    color: white;
     font-size: 18px;
     padding: 5px 5px;
     background-color: red;
     border-radius: 50%;
   }
-  .removeIcon4{
+  .removeIcon4 {
     position: absolute;
     top: 10%;
     left: 70%;
-    color:white;
+    color: white;
     font-size: 18px;
     padding: 5px 5px;
     background-color: red;
     border-radius: 50%;
   }
-  .removeIcon5{
+  .removeIcon5 {
     position: absolute;
     top: 10%;
     left: 90%;
-    color:white;
+    color: white;
     font-size: 18px;
     padding: 5px 5px;
     background-color: red;
     border-radius: 50%;
   }
-   }
-  @media (max-width: 767.98px) { 
-    .ActiveButton{
-      /* height: 93px;
+}
+@media (max-width: 767.98px) {
+  .ActiveButton {
+    /* height: 93px;
       width: 128px; */
-      background-color: #EAEAEA;
-      padding:20px 20px ;
-      margin:20px 0px 20px 0px;
-      text-align: center;
+    background-color: #eaeaea;
+    padding: 20px 20px;
+    margin: 20px 0px 20px 0px;
+    text-align: center;
   }
-  .SearchIcon{
+  .SearchIcon {
     height: 1.5rem;
     width: 1.5rem;
     padding: 4px;
     position: absolute;
-    box-sizing:border-box;
-    top:50%;
-    left:73%;
+    box-sizing: border-box;
+    top: 50%;
+    left: 73%;
     transform: translateY(-50%);
-}
-  .addIcon{
-    font-size:13px;
+  }
+  .addIcon {
+    font-size: 13px;
   }
   /* .image{
     width:250px;
     height:250px;
   } */
-  .customButton{
-      height: 93px;
-      padding:20px 20px ;
-      text-align:center;
-      
-  }
-  .row{
+  .customButton {
+    height: 93px;
+    padding: 20px 20px;
     text-align: center;
   }
-  .heading{
+  .row {
+    text-align: center;
+  }
+  .heading {
     font-size: 20px;
     padding: 10px 10px;
     text-align: center;
   }
-  .imageContainer{
-    background-color:#f0f0f0;
-    height:500px;
+  .imageContainer {
+    background-color: #f0f0f0;
+    height: 500px;
     margin-left: 0px;
   }
- .nftContainer  p{
-    font-size:12px;
+  .nftContainer p {
+    font-size: 12px;
   }
-  .headingContainer{
+  .headingContainer {
     text-align: center;
-  
   }
-  .nftContainer{
-    width:220px;
-    height:200px;
+  .nftContainer {
+    width: 220px;
+    height: 200px;
     margin: 8px;
-    background-color: #EAEAEA;
+    background-color: #eaeaea;
     padding: 50px 20px;
     text-align: center;
     margin-left: auto;
     margin-right: auto;
   }
-  .container{
+  .container {
     height: auto;
     margin-left: auto;
     margin-right: auto;
@@ -702,60 +690,59 @@ span .imageWrapper{
     margin-bottom: 20px;
     text-align: center;
   }
-  .bottomimage{
+  .bottomimage {
     width: 180px;
     height: 250px;
-   
   }
-  .bottomContainer{
+  .bottomContainer {
     height: auto;
   }
-  .removeIcon{
+  .removeIcon {
     position: absolute;
     top: 2%;
     left: 54%;
-    color:white;
+    color: white;
     font-size: 24px;
     padding: 5px 5px;
     background-color: red;
     border-radius: 50%;
   }
-  .removeIcon2{
+  .removeIcon2 {
     position: absolute;
     top: 22%;
     left: 54%;
-    color:white;
+    color: white;
     font-size: 24px;
     padding: 5px 5px;
     background-color: red;
     border-radius: 50%;
   }
-  .removeIcon3{
+  .removeIcon3 {
     position: absolute;
     top: 42%;
-    left:54%;
-    color:white;
+    left: 54%;
+    color: white;
     font-size: 24px;
     padding: 5px 5px;
     background-color: red;
     border-radius: 50%;
   }
-  .removeIcon4{
+  .removeIcon4 {
     position: absolute;
     top: 62%;
     left: 54%;
-    color:white;
+    color: white;
     font-size: 24px;
     padding: 5px 5px;
     background-color: red;
     border-radius: 50%;
   }
-  .removeIcon5{
+  .removeIcon5 {
     position: absolute;
     top: 82%;
     left: 54%;
-    color:white;
-    font-size:24px;
+    color: white;
+    font-size: 24px;
     padding: 5px 5px;
     background-color: red;
     border-radius: 50%;
@@ -764,78 +751,74 @@ span .imageWrapper{
     display: flex;
     place-content: center;
   } */
-  .content{
+  .content {
     position: absolute;
-    display:contents;
-
+    display: contents;
   }
-   }
-  @media (max-width: 575.98px) { 
-    .ActiveButton{
-      /* height: 93px;
+}
+@media (max-width: 575.98px) {
+  .ActiveButton {
+    /* height: 93px;
       width: 128px; */
-      background-color: #EAEAEA;
-      padding:20px 20px ;
-      margin:20px 0px 20px 0px;
-      text-align: center;
+    background-color: #eaeaea;
+    padding: 20px 20px;
+    margin: 20px 0px 20px 0px;
+    text-align: center;
   }
-  .SearchIcon{
+  .SearchIcon {
     height: 1.5rem;
     width: 1.5rem;
     padding: 4px;
     position: absolute;
-    box-sizing:border-box;
-    top:50%;
-    left:85%;
+    box-sizing: border-box;
+    top: 50%;
+    left: 85%;
     transform: translateY(-50%);
-}
-  .nftContainer  p{
-    font-size:20px;
   }
-  .customButton{
-      height: 93px;
-      padding:20px 20px ;
-      text-align:center;
-     
+  .nftContainer p {
+    font-size: 20px;
   }
-  .content{
-    position: absolute;
-    display:contents;
-
-  }
-  .row{
+  .customButton {
+    height: 93px;
+    padding: 20px 20px;
     text-align: center;
   }
-  .nftRow{
-    width:100%;
+  .content {
+    position: absolute;
+    display: contents;
+  }
+  .row {
+    text-align: center;
+  }
+  .nftRow {
+    width: 100%;
     height: 1500px;
     border: 1px solid #dedede !important;
   }
-  .heading{
+  .heading {
     font-size: 20px;
     padding: 10px 10px;
     text-align: center;
   }
-  .imageContainer{
-    background-color:#f0f0f0;
-    height:500px;
+  .imageContainer {
+    background-color: #f0f0f0;
+    height: 500px;
     margin-left: 0px;
   }
-  .headingContainer{
+  .headingContainer {
     text-align: center;
-  
   }
-  .nftContainer{
-    width:200px;
-    height:200px;
+  .nftContainer {
+    width: 200px;
+    height: 200px;
     margin: 8px;
-    background-color: #EAEAEA;
+    background-color: #eaeaea;
     padding: 50px 20px;
     text-align: center;
     margin-left: auto;
     margin-right: auto;
   }
-  .container{
+  .container {
     height: auto;
     margin-left: auto;
     margin-right: auto;
@@ -843,66 +826,87 @@ span .imageWrapper{
     margin-bottom: 20px;
     text-align: center;
   }
-  .bottomimage{
+  .bottomimage {
     width: 200px;
     height: 250px;
-   
   }
-  .bottomContainer{
+  .bottomContainer {
     height: auto;
   }
-  .removeIcon{
+  .removeIcon {
     position: absolute;
     top: 2%;
     left: 58%;
-    color:white;
+    color: white;
     font-size: 24px;
     padding: 5px 5px;
     background-color: red;
     border-radius: 50%;
   }
-  .removeIcon2{
+  .removeIcon2 {
     position: absolute;
     top: 22%;
     left: 58%;
-    color:white;
+    color: white;
     font-size: 24px;
     padding: 5px 5px;
     background-color: red;
     border-radius: 50%;
   }
-  .removeIcon3{
+  .removeIcon3 {
     position: absolute;
     top: 42%;
-    left:58%;
-    color:white;
+    left: 58%;
+    color: white;
     font-size: 24px;
     padding: 5px 5px;
     background-color: red;
     border-radius: 50%;
   }
-  .removeIcon4{
+  .removeIcon4 {
     position: absolute;
     top: 62%;
     left: 58%;
-    color:white;
+    color: white;
     font-size: 24px;
     padding: 5px 5px;
     background-color: red;
     border-radius: 50%;
   }
-  .removeIcon5{
+  .removeIcon5 {
     position: absolute;
     top: 82%;
     left: 58%;
-    color:white;
-    font-size:24px;
+    color: white;
+    font-size: 24px;
     padding: 5px 5px;
     background-color: red;
     border-radius: 50%;
   }
-  .addIcon{
-    font-size:40px;
+  .addIcon {
+    font-size: 40px;
   }
-  
-   }
+}
+
+.spinner-outer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #3330305e;
+  width: 100%;
+  height: 100%;
+  /* transform: translate(-50%, -50%); */
+  z-index: 99999;
+}
+
+.cust-spinner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+
+.active{
+  border: 5px solid red;
+}

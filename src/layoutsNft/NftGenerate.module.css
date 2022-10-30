@@ -433,3 +433,9 @@ span.uploadImage{
   align-items: center;
   position: relative;
   }
+
+.active{
+    border: 5px solid red;
+}
+
+
