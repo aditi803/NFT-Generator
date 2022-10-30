@@ -14,16 +14,11 @@ import useLoader from "../../hooks/useLoader";
 
 export let responseApi;
 
-// export let layerGetApi
-
 const AddLayer = (props) => {
   const { layerId, setLayerId, collectionId, loader, setLoader } = useLayer();
-//   const { loader, showLoader, hideLoader } = useLoader();
 
-  // console.log(props, '123456789')
   const { getLayer, setShow, show } = props;
   const token = localStorage.getItem("token");
-  // getLayer()
 
   const [layer, setLayer] = useState("");
   const [upload, setUpload] = useState(false);
@@ -37,14 +32,12 @@ const AddLayer = (props) => {
   });
 
   const onSubmit = async () => {
-    // const collectionId = localStorage.getItem('collectionId')
     const data = {
       name: formik.values.layer,
       collectionId,
     };
     // showLoader();
     setLoader(true)
-    // console.log(collectionId, '>>>>>>>>>>>>>>>>>>CollectionID')
 
     console.log('testing', loader)
     await axios
@@ -52,17 +45,13 @@ const AddLayer = (props) => {
         headers: { Authorization: `Bearer ${token}` },
       })
       .then((res) => {
-        // console.log(res, "Add layer response")
         setResApi(res);
-        // console.log("meeeeeee");
-        // console.log(res.data.data.layer._id, "Layer id")
         localStorage.setItem("LayerId", res.data.data.layer._id); // Not in use for R.B
         setLayerId(res.data.data.layer._id);
         setShow(false);
-        formik.resetForm();
-        // setTimeout(() => {
         props.getLayer(collectionId);
-        // }, 1000)
+        toast.success('Layer Added Successfully')
+        formik.resetForm();
       })
       .catch((err) => {
         console.log(err);
@@ -74,9 +63,6 @@ const AddLayer = (props) => {
         // setLoader(false)
       });
   };
-  // useEffect(() => {
-  //     props.getLayer()
-  // }, []);
 
   const formik = useFormik({
     initialValues,
@@ -90,7 +76,6 @@ const AddLayer = (props) => {
 
   return (
     <div>
-      {/* {console.log('layerName', formik.values.layer)} */}
       <Modal onHide={handleClose} show={show}>
         <UploadImage show={upload} setShow={setUpload} />
         <form className={style.form} onSubmit={formik.handleSubmit}>
@@ -122,7 +107,6 @@ const AddLayer = (props) => {
               variant="primary"
               className={style.Btn}
               type="submit"
-            //   onClick={(e) => props.getLayer(e)}
             >
               Add Layer
             </Button>

@@ -76,8 +76,6 @@ const NftGenerate = ({ getLayer, setLayerData, layerData }) => {
   const submitHandler = (e, setUpload, handleClose) => {
     e.preventDefault();
     let formData = new FormData(e.target);
-    // console.log(formData, "Form Data images")
-    // const layerId = localStorage.getItem('LayerId')
     setLoader(true);
     axios
       .post(
@@ -86,21 +84,16 @@ const NftGenerate = ({ getLayer, setLayerData, layerData }) => {
         { headers: { Authorization: `Bearer ${token}` } }
       )
       .then((res) => {
-        // console.log(res, "Upload Image response horns side ")
         setUploadData(res);
         setUpload(false);
         getImages();
         handleClose();
-
+        toast.success('Image Uploaded Successfully')
         // localStorage.removeItem('LayerId')
       })
       .catch((err) => {
         console.log(err?.response);
-        toast.error(err?.response?.data?.message ?? "Something went wrong! Please select collection and then layer", );
-        // toast("You have successfully subscribed to Newsletter!", {
-        //     type: "success",
-        //     className: "toast_font"
-        // });
+        toast.error(err?.response?.data?.message ?? "Something went wrong! Please select collection and then layer", );     
         setLoader(false);
       })
       .finally(() => {

@@ -30,9 +30,6 @@ export const Webpages = () => {
         <Routes>
           <Route exact path="/" element={<Homepage />} />
           <Route path="/getStarted/*" element={<GetStarted />} />
-          {/* <Route path="/editing" element={<EditingPage />} /> */}
-          {/* <Route path="/loading" element={<Fluidity />} /> */}
-          {/* <Route path="/error" element={<Error />} /> */}
           <Route path="/generate" element={<Layout />} />
           <Route path="/collections" element={<Collections />} />
           <Route path="/nftGenerate" element={<NftGenerate />} />

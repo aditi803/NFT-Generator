@@ -4,7 +4,6 @@ import Button from 'react-bootstrap/Button';
 import style from './generateNft.module.css'
 
 export const NftGenerator = ({setToggle, toggle}) =>{
-  // console.log(toggle,"togllee")
     const handleClose = () => {
         setToggle(false)
     }
