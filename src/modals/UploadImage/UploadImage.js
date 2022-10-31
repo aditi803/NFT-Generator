@@ -12,10 +12,7 @@ const UploadImage = ({ show, setShow,submitHandler}) => {
   const [downloadUrl, setDownloadUrl] = useState()
   const [file, setFile] = useState(null);
   const [upload, setUpload] = useState(false);
-  const [download, setDownload] = useState(false);
-  const handleClose = () => setShow(false);
-  const [addLayer, setAddLayer] = useState(false)
- 
+  const handleClose = () => setShow(false); 
 
   const downloadFile = () => {
     const link = document.createElement('a');

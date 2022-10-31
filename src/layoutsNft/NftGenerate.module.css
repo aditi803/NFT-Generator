@@ -193,19 +193,6 @@ span.uploadImage{
     position: relative;
     text-align: center;
 }
-/* .dataName button{
-    border: none;
-    padding: 0px;
-    background: transparent;
-} */
-/* .viewLayer{
-    width: 50px;
-    height: 50px;
-    border: 1px dotted #c1c1c1;
-    cursor: pointer;
-    padding: 5px;
-    position: relative;
-} */
 .nftFooter ul li button span{
     font-size: 12px;
     color: #707070;
@@ -214,72 +201,11 @@ span.uploadImage{
     display: block;
     margin-top: 9px;
 }
-/* .listWrapper{
-    margin-left: -4px;
-    overflow: auto;
-    background: #f6f6f6 !important;
-} */
-/* .listView{
-    padding: 15px 15px 0px 15px;
-    cursor: move;
-    margin: 0 10px;
-    color: #2e2e2e;
-    list-style: none !important;
-} */
-/* .categoryDelete{
-    background: transparent;
-    border: 0px;
-    color: rgb(46, 46, 46);
-    display: inline-block;
-    font-family: inherit;
-    font-size: 0.7rem;
-    line-height: 1.15;
-    width: 16px;
-    appearance: none;
-    background-image: url("https://designcloud.appypie.com/dist/img/public/img/cross-bt.png") !important;
-    background-repeat: no-repeat !important;
-    position: relative;
-    position: relative;
-    bottom: 29px;
-    left: 13px !important;
-    background-size: 16px !important;
-} */
-/* .elementItem{
-    background: transparent;
-    background-repeat: no-repeat !important;
-    background-position: center !important;
-    background-size: 50px 50px !important;
-    background-color: #f9f9f9 !important;
-    width: 50px;
-    height: 50px;
-    border: 1px dotted #c1c1c1;
-} */
-/* .listView span{
-    color: #898989;
-    font-size: 12px;
-    font-weight: 400;
-    text-transform: capitalize;
-    display: block;
-    margin-top: 8px;
-    text-align: center ;
-    margin-left: 14px;
-} */
 .addLayer{
     margin-top: 7px;
     margin-left: 145px;
     padding-right: 34px;
 }
-/* .addLayerOpt{
-    border: 2px solid #ddd;
-    width: 50px;
-    height: 50px;
-    display: block;
-    cursor: pointer;
-    border-radius: 50%;
-    margin: 7px;
-    padding: 8px;
-} */
-
 
 .image {
     box-sizing: border-box;
@@ -384,12 +310,8 @@ span.uploadImage{
     width: 63px;
     background-color: #F0F0F0;
     border-radius: 50px;
-  }.addLayer
-  /* .outterDiv {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  } */
+  }
+
   .moreDiv {
     display: flex;
     justify-content: center;
@@ -415,17 +337,9 @@ span.uploadImage{
   }
   .addLayer {
     padding-right: 44px;
-    /* padding-left: 112px;
-    background-color: white;
-    width: 265px;
-    height: 132px;
-    padding-top: 26px; */
   }
   .layerBaby{
-    /* padding-left: 46px; */
     height: 112px;
-  /* width:  161px; */
-  /* padding: 0px 28px 0px 28px; */
   background-color: white;
   display: flex;
   justify-content: center;

@@ -1,11 +1,7 @@
 import React, { useState } from 'react';
-// import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
 import Button from 'react-bootstrap/Button';
 import style from './StartProject.module.css'
-// import { useFormik } from "formik";
-// import * as Yup from "yup";
-// import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
 import AddLayer from '../../Form/AddLayer/AddLayer';
 
@@ -13,11 +9,9 @@ import { useLayer } from '../../context/LayerContext';
 import useLoader from './../../hooks/useLoader'
 import {toast} from 'react-toastify'
 
-// import UploadImage from '../../modals/UploadImage/UploadImage';
 const StartProject = ({ show, setShow , getLayer, setLayerData, layerData}) => {
 
-    // const { loader, showLoader, hideLoader } = useLoader();
-    const {layerId, setLayerId, collectionId, setCollectionId, loader, setLoader} = useLayer();
+    const { setCollectionId, loader, setLoader} = useLayer();
 
     const [layer, setLayer] = useState(true);
     const [name, setName] = useState("")
@@ -38,14 +32,11 @@ const StartProject = ({ show, setShow , getLayer, setLayerData, layerData}) => {
         axios
             .post("https://nftsgenerator.herokuapp.com/api/user/createCollection", data, { headers: { Authorization: `Bearer ${token}` } })
             .then((res) => {
-                // console.log(res, "Create Collection")
-                // console.log(res.data.data.collection._id, "IDDDDD")
                 localStorage.setItem('collectionId', res.data.data.collection._id)
                 setCollectionId(res.data.data.collection._id)
                 setLayer(false)
             })
             .catch((err) => {
-                console.log(err, '>>>>>>>>>>>>>>>>>>>')
                 toast.error(err?.response?.data?.message ?? "Something went wrong!" );
             }).finally(() => {
                 setLoader(false);

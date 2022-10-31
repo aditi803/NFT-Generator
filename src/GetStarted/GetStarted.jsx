@@ -1,19 +1,14 @@
 import React, { useState, useEffect } from "react";
 import style from "./GetStarted.module.css";
 import Mask from "../assets/Mask.png";
-// import { useNavigate } from "react-router-dom";
 import Navbar from "./Navbar";
 import StartProject from "../modals/createNft/StartProject";
-// import NftGenerator from '../modals/generateNft'
 import NftGenerate from "../layoutsNft/NftGenerate";
 import plus from "../assets/asse/plus.png";
 import album from "../assets/asse/album.png";
 import search from "../assets/asse/search.png";
 import template from "../assets/asse/template.png";
 import AddLayer from "../Form/AddLayer/AddLayer";
-// import NftGenerator from '../modals/generateNft';
-// import NftGenerate from '../layoutsNft/NftGenerate';
-// import NftGenerate from "../layoutsNft/NftGenerate";
 
 import axios from "axios";
 import useLoader from "../hooks/useLoader";
@@ -23,22 +18,16 @@ import Spinner from "react-bootstrap/Spinner";
 import { LayerProvider, useLayer } from "../context/LayerContext";
 
 const GetStarted = () => {
-  // const { loader, showLoader, hideLoader } = useLoader();
 
   const token = localStorage.getItem("token");
-  // const [show, setShow] = useState(false);
   const [uploadImage, setUploadImage] = useState(false);
   const [startProject, setStartProject] = useState(false);
-  // const [nftGenerate, setNftGenerate] = useState(false)
-  // const [toggle, setToggle] = useState("1");
-  // const [open, setOpen] = useState(false)
-  // const navigate = useNavigate();
+  
 
   const [collectionData, setCollectionData] = useState();
 
   const { collectionId, setCollectionId, setLayerId, loader, setLoader } = useLayer();
 
-  // console.log(collectionData, "COLLECTION DATA USE EFFECT");
 
   useEffect(() => {
     axios
@@ -47,58 +36,16 @@ const GetStarted = () => {
       })
       .then((res) => {
         setCollectionData(res.data.data.collections);
-        // console.log(res.data.data.collections, "Collection Data");
-        // console.log(res.data.data.layers[0], "nft gen side api get");
       })
       .catch((err) => {
         console.log(err);
       });
+      //eslint-disable-next-line
   }, [collectionId]);
-
-  
-
-  // const nftImages = [
-  //   {
-  //     id: 1,
-  //     images: Mask,
-  //   },
-  //   {
-  //     id: 2,
-  //     images: Mask,
-  //   },
-  //   {
-  //     id: 3,
-  //     images: Mask,
-  //   },
-  //   {
-  //     id: 4,
-  //     images: Mask,
-  //   },
-  //   {
-  //     id: 5,
-  //     images: Mask,
-  //   },
-  //   {
-  //     id: 6,
-  //     images: Mask,
-  //   },
-  //   {
-  //     id: 7,
-  //     images: Mask,
-  //   },
-  //   {
-  //     id: 8,
-  //     images: Mask,
-  //   },
-  // ];
-  // const nftImages2 = [
-  // ]
 
   const [layerData, setLayerData] = useState([]);
 
   const getLayer = (collectionId) => {
-    // const collectionId = localStorage.getItem("collectionId");
-    // console.log(collectionId, '>>>>>>>>>>>>>>>>>>>>ID GET LAYER')
     setLoader(true)
     axios
       .get(
@@ -107,8 +54,6 @@ const GetStarted = () => {
       )
       .then((res) => {
         setLayerData(res.data.data.layers, "Get layer data nft gen side");
-        // console.log(res.data.data.layers[0],"LayerData")
-        // console.log(res.data.data.layers[0], "nft gen side api get");
       })
       .catch((err) => {
         console.log(err);
@@ -124,7 +69,6 @@ const GetStarted = () => {
   };
 
   return (
-    // <LayerProvider>
     <div
       className={`container-fluid m-0 ${style.getStarted} position-relative`}
     >
@@ -179,7 +123,6 @@ const GetStarted = () => {
                   return (
                     <li
                       key={index}
-                      // className={content._id === collectionId ? style.active : ''}
                       onClick={() => handleCollectionHandler(content._id)}
                     >
                       <span className={style.imageWrapper}>
@@ -194,19 +137,6 @@ const GetStarted = () => {
                     </li>
                   );
                 })}
-                {/* {nftImages.map((content, i) => (
-                  <li key={i}>
-                    <span className={style.imageWrapper}>
-                      <a href="/">
-                        <img
-                          src={content.images}
-                          className={style.mainImg}
-                          alt="content"
-                        />
-                      </a>
-                    </span>
-                  </li>
-                ))} */}
               </ul>
             </div>
           </div>
@@ -232,7 +162,6 @@ const GetStarted = () => {
         </div>
       )}
     </div>
-    // </LayerProvider>
   );
 };
 

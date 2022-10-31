@@ -5,11 +5,6 @@ import {MOCK_TEXTS} from '../../mockdata/Constants';
 import {useNavigate} from "react-router-dom"
 const FlexibleNoCode = () => {
   const navigate = useNavigate();
-  // const [show, setShow] =React.useState(false);
-  // const handleShow = (e) => {
-  //   e.preventDefault();
-  //   setShow(true);
-  // };
   return (
     <div className={style.section}>
     <div className="container ">

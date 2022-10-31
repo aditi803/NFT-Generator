@@ -25,7 +25,6 @@ export const NftGenerator = ({setToggle, toggle}) =>{
 
     const editions = parseInt(copy)
 
-    console.log(collectionId, "Collection54687584")
     const token = localStorage.getItem("token");
     const data ={ 
       editions,
@@ -40,7 +39,7 @@ export const NftGenerator = ({setToggle, toggle}) =>{
         console.log(res)
       })
       .catch((err) => {
-        toast.error("Try again")
+        toast.error("try again")
       })
     }
 
@@ -83,5 +82,3 @@ export const NftGenerator = ({setToggle, toggle}) =>{
       </>
     )
 }
-
-// export default NftGenerator

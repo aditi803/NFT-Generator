@@ -113,7 +113,7 @@ const NftGenerate = ({ getLayer, setLayerData, layerData }) => {
                         <span className={style.layerImages}>
                           <img
                             src={`https://nftsgenerator.herokuapp.com${layerImg.imageUrl}`}
-                            alt="plus"
+                            alt="layer"
                           />
                         </span>
                       </div>

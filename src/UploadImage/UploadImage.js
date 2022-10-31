@@ -5,11 +5,10 @@ import style from './UploadImage.module.css';
 import Loader from '../loader/index'
 
 const UploadImage = ({ show, setShow,submitHandler}) => {
+  //eslint-disable-next-line
   const [downloadUrl, setDownloadUrl] = useState()
   const [loader, setLoader] = useState(false);
-  // const [file, setFile] = useState(null);
   const [upload, setUpload] = useState(false);
-  // const [download, setDownload] = useState(false);
   const handleClose = () => setShow(false);
  
 

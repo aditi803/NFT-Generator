@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import Modal from "react-bootstrap/Modal";
 import style from "./Login.module.css";
 import { useFormik } from "formik";
-// import * as Yup from "yup";
 import Logo from "../assets/Logo.png";
 import ForgetPassword from "../Form/ForgetPassword/ForgetPassword";
 import SignupForm from '../Form/SignupForm/SignupForm'
@@ -11,27 +10,21 @@ import VerifyForm from "../Form/ForgetPassword/VerifyForm";
 import { NavLink } from "react-bootstrap";
 import axios from 'axios';
 import { LOGIN_API } from "../Api/Api";
-import {useNavigate} from 'react-router-dom'
-// import dots from '../assets/dots.png'
 const Login = (props) => {
   const { show, onClose, open, setOpen } = props;
   const [forget, setForget] = useState(false);
   const [verify, setVerify] = useState(false);
-  const navigate = useNavigate()
   const formik = useFormik({
     initialValues: {
       email: "",
       password: "",
     },
     onSubmit: (values) => {
-      // console.log(values);
       axios.post(LOGIN_API, values)
         .then((res) => {
           console.log(res);
           toast.success("Login Successfully");
-          // navigate("/")
           localStorage.setItem('token', res.data.data.accessToken);
-          // navigate("/");
           onClose()
         })
         .catch((err) => {

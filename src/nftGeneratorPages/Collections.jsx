@@ -1,6 +1,5 @@
 import React, { useState } from 'react'
 import styles from './collections.module.css'
-// import Router, { useRouter } from 'next/router'
 import {useNavigate} from 'react-router-dom'
 import img1 from '../assets/Collections/image1.png'
 import img2 from '../assets/Collections/image2.png'

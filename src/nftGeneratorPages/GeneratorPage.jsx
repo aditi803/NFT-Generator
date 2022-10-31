@@ -4,6 +4,7 @@ import StartProject from '../modals/createNft/StartProject';
 import NftGenerate from '../layoutsNft/NftGenerate';
 const GeneratorPage = () => {
   const [show, setShow] = useState(false)
+  // eslint-disable-next-line
   const [open, setOpen] = useState(false)
 
   return (

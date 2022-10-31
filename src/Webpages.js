@@ -1,27 +1,20 @@
 import React from "react";
 import {
   BrowserRouter as Router,
-  // Switch,
   Route,
-  // Link,
   Routes,
 } from "react-router-dom";
 
-// import { EditingPage } from "./EditingPage/EditingPage";
-// import { Error } from "./ErrorPage/Error.js";
-// import { Fluidity } from "./LoadingPage/Fluidity";
 import Homepage from "./homepage/Homepage";
 import "./style/styles.css";
 import GetStarted from "./GetStarted/GetStarted";
 import Layout from "../src/nftGeneratorPages/Layout";
 import Collections from "../src/nftGeneratorPages/Collections";
 import NftGenerate from "./layoutsNft/NftGenerate";
-// import {Page} from '../src/EditingPage/Page'
-// import { EditingPage } from "./EditingPage/EditingPage";
 
-import { ToastContainer, toast } from 'react-toastify';
+import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import { LayerProvider, useLayer } from "./context/LayerContext";
+import { LayerProvider } from "./context/LayerContext";
 
 export const Webpages = () => {
   return (
@@ -34,7 +27,7 @@ export const Webpages = () => {
           <Route path="/collections" element={<Collections />} />
           <Route path="/nftGenerate" element={<NftGenerate />} />
         </Routes>
-          <ToastContainer />
+        <ToastContainer />
       </Router>
     </LayerProvider>
   );
