@@ -29,8 +29,10 @@ const Login = (props) => {
         .then((res) => {
           console.log(res);
           toast.success("Login Successfully");
+          // navigate("/")
           localStorage.setItem('token', res.data.data.accessToken);
-          navigate("/");
+          // navigate("/");
+          onClose()
         })
         .catch((err) => {
           console.log(err);

@@ -17,31 +17,6 @@ const UploadImage = ({ show, setShow,submitHandler}) => {
   const [addLayer, setAddLayer] = useState(false)
  
 
-  // const layerId = localStorage.getItem('LayerId')
-  // console.log('Upload page layer id ', layerId)
-
-  // const token = localStorage.getItem('token')
-  // const submitHandler = (e) => {
-  //   handleClose()
-
-  //   e.preventDefault()
-  //   let formData = new FormData(e.target);
-  //   // console.log(formData, "Form Data images")
-  //   const layerId = localStorage.getItem('LayerId')
-  //   axios.post(`https://nftsgenerator.herokuapp.com/api/user/uploadImages/${layerId}`, formData)
-  //     .then((res) => {
-  //       console.log(res, "Upload Image response")
-  //       console.log(res.data.data.collection._id, "Collection ID")
-
-  //       localStorage.setItem('collectionID', res.data.data.collection._id)
-  //       setUpload(false)
-        
-  //     })
-  //     .catch((err) => {
-  //       console.log(err)
-  //     })
-  // }
-
   const downloadFile = () => {
     const link = document.createElement('a');
     link.href = downloadUrl;

@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import style from "./NftGenerate.module.css";
-import { AiOutlinePlus } from "react-icons/ai";
 import UploadImage from "../modals/UploadImage/UploadImage";
 import backgroundImage from "../assets/0background.png";
 import { Slider } from "@mui/material";
@@ -11,16 +10,14 @@ import EditData from "../modals/EditData";
 import AddLayer from "../Form/AddLayer/AddLayer";
 import cross from "../assets/cross.png";
 import axios from "axios";
-import { responseApi } from "../Form/AddLayer/AddLayer";
 
 import { toast } from "react-toastify";
 
 import { useLayer } from "../context/LayerContext";
 
 const NftGenerate = ({ getLayer, setLayerData, layerData }) => {
-  // let responseMapp = []
 
-  // Layer Id data from layer context
+  //eslint-disable-next-line
   const { layerId, setLayerId, loader, setLoader } = useLayer();
 
   useEffect(() => {
@@ -30,22 +27,17 @@ const NftGenerate = ({ getLayer, setLayerData, layerData }) => {
     }else{
         setGetImageData([])
     }
+  //eslint-disable-next-line
   }, [layerId]);
 
   const token = localStorage.getItem("token");
-  // if (layerGetApi !== undefined) {
-  //     responseMapp.push(layerGetApi)
-  // }
-  // console.log(layerGetApi[0].n," layer get api")
-
-  // console.log(layerGetApi, "LAyer Get api data")
 
   const [show, setShow] = useState(false);
-  // const [val, setVal] = useState([0,100])
   const [toggle, setToggle] = useState(false);
   const [layer, setLayer] = useState(false);
   const [edit, setEdit] = useState(false);
 
+  //eslint-disable-next-line
   const [uploadData, setUploadData] = useState([]);
   const handleShow = () => {
     setToggle(true);
@@ -54,7 +46,6 @@ const NftGenerate = ({ getLayer, setLayerData, layerData }) => {
   const [getImageData, setGetImageData] = useState([]);
 
   const getImages = () => {
-    // const layerId = localStorage.getItem('LayerId')
     setLoader(true);
     axios
       .get(
@@ -85,11 +76,10 @@ const NftGenerate = ({ getLayer, setLayerData, layerData }) => {
       )
       .then((res) => {
         setUploadData(res);
+        handleClose();
         setUpload(false);
         getImages();
-        handleClose();
         toast.success('Image Uploaded Successfully')
-        // localStorage.removeItem('LayerId')
       })
       .catch((err) => {
         console.log(err?.response);

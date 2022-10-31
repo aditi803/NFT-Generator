@@ -4,6 +4,7 @@ import Button from 'react-bootstrap/Button';
 
 const DownloadNftModal = ({download, setDownload}) => {
     const handleClose = () => setDownload(false);
+    
   return (
     <div>
         <Modal download={download} onHide={handleClose}>

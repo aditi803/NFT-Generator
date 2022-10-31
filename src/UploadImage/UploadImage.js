@@ -1,10 +1,8 @@
-import React, { useState, createContext } from 'react'
+import React, { useState } from 'react'
 import Modal from "react-bootstrap/Modal";
 import Button from 'react-bootstrap/Button';
-import axios from 'axios';
 import style from './UploadImage.module.css';
 import Loader from '../loader/index'
-import AddLayer from '../../Form/AddLayer';
 
 const UploadImage = ({ show, setShow,submitHandler}) => {
   const [downloadUrl, setDownloadUrl] = useState()

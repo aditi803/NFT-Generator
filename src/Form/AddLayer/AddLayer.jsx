@@ -1,8 +1,6 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import style from "./AddLayer.module.css";
 import { useFormik } from "formik";
-// import Modal from 'react-bootstrap/Modal';
-import { useNavigate } from "react-router-dom";
 import * as Yup from "yup";
 import axios from "axios";
 import Modal from "react-bootstrap/Modal";
@@ -10,18 +8,21 @@ import Button from "react-bootstrap/Button";
 import UploadImage from "../../modals/UploadImage/UploadImage";
 import { toast } from 'react-toastify'
 import { useLayer } from "../../context/LayerContext";
-import useLoader from "../../hooks/useLoader";
 
 export let responseApi;
 
 const AddLayer = (props) => {
+  // eslint-disable-next-line
   const { layerId, setLayerId, collectionId, loader, setLoader } = useLayer();
 
+  // eslint-disable-next-line
   const { getLayer, setShow, show } = props;
   const token = localStorage.getItem("token");
 
+  // eslint-disable-next-line
   const [layer, setLayer] = useState("");
   const [upload, setUpload] = useState(false);
+  // eslint-disable-next-line
   const [resApi, setResApi] = useState();
 
   const initialValues = {
@@ -36,7 +37,6 @@ const AddLayer = (props) => {
       name: formik.values.layer,
       collectionId,
     };
-    // showLoader();
     setLoader(true)
 
     console.log('testing', loader)
@@ -91,7 +91,6 @@ const AddLayer = (props) => {
                 placeholder="Add Layer"
                 name="layer"
                 value={layer}
-                // onChange={(e) => setLayer(e.target.value)}
                 {...formik.getFieldProps("layer")}
               />
               {formik.touched.layer && formik.errors.layer ? (

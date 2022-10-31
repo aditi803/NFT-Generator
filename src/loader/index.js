@@ -6,7 +6,6 @@ function Loader() {
   return (
     <div className="loader">
       <FadeLoader
-        // size={20}
         color="#4A171E"
       />
   </div>

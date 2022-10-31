@@ -1,9 +1,7 @@
-import React, {useState} from 'react'
+import {useState} from 'react'
 
 const useLoader = () => {
     const [loader, setLoader] = useState(false) 
-
-    console.log(loader, 'from Hooks>>>>>>>>')
 
     const showLoader = () => {
         setLoader(true);
