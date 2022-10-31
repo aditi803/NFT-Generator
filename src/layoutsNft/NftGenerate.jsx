@@ -243,7 +243,7 @@ const NftGenerate = ({ getLayer, setLayerData, layerData }) => {
                     </div>
                   </div>
 
-                  <div className={style.baby}>
+                  {/* <div className={style.baby}>
                     <div className={style.shape}>
                       <img src="red_close.png" alt="" />
                     </div>
@@ -258,18 +258,18 @@ const NftGenerate = ({ getLayer, setLayerData, layerData }) => {
                     >
                       <p>Background</p>
                     </div>
-                  </div>
+                  </div> */}
                   {layerData.map((layerData) => (
                     <div
-                      className={`${style.baby} ${
-                        layerData._id === layerId ? style.active : ""
-                      }`}
+                      className={`${style.baby}`}
                       key={layerData._id}
                       onClick={() => {
                         setLayerId(layerData._id);
                       }}
                     >
-                      <div className={style.rectangle}>
+                      <div className={`${style.rectangle} ${
+                        layerData._id === layerId ? style.active : ""
+                      }`}>
                         <div className={style.shape}>
                           <img src={cross} alt="" />
                         </div>

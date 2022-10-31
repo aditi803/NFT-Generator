@@ -22,7 +22,7 @@ const Login = (props) => {
     onSubmit: (values) => {
       axios.post(LOGIN_API, values)
         .then((res) => {
-          console.log(res);
+          // console.log(res);
           toast.success("Login Successfully");
           localStorage.setItem('token', res.data.data.accessToken);
           onClose()

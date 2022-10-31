@@ -52,11 +52,11 @@
 .nftColBottom{
     display: flex;
     overflow: overlay;
-    background-color: #efefef;
+    background-color: #f9f9f9;
 }
 
 .categoryList{
-    background-color: #fafafa;
+    background-color: #f9f9f9;
     width: 71%;
     height: 86%;
     padding: 91px 0px 20px 26px;
@@ -349,7 +349,7 @@ span.uploadImage{
   }
 
 .active{
-    border: 5px solid blue;
+    box-shadow: 1px 0px 0px 19px #e3e3e3;
 }
 
 
